@@ -1,0 +1,1 @@
+$(document).ready((function($){$("#addUpdateBtn").click((function(){$(".btn-dropdown").slideToggle(".show-btn-dropdown")}))})),$(document).ready((function($){$(".btn-dropdown").click((function(){$(this).slideToggle(".show-btn-dropdown")}))})),$(document).mouseup((function(n){var o=$(".btn-dropdown");o.is(n.target)||0!==o.has(n.target).length||o.hide()}));

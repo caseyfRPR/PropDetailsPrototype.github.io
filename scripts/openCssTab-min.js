@@ -1,0 +1,1 @@
+document.querySelectorAll("label").forEach((e=>{e.addEventListener("click",(()=>{event.target.parentElement.click()}))}));

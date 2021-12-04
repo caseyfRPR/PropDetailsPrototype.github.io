@@ -1,0 +1,1 @@
+const stickyElm=document.querySelector("nav"),observer=new IntersectionObserver((([e])=>e.target.classList.toggle("isSticky",e.intersectionRatio<1)),{rootMargin:"0px 0px 120% 0px",threshold:[1]});observer.observe(stickyElm);
