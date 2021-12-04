@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="8px" viewBox="0 0 31 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>angle-down</title>
+    <g id="Tabs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prop-Details---My-Updates---additional-Cards" transform="translate(-1724.000000, -1905.000000)">
+            <g id="angle-down" transform="translate(1724.000000, 1905.000000)">
+                <rect id="Rectangle" x="0" y="0" width="31" height="8"></rect>
+                <path d="M14.6813761,1.73186032 L8.20365274,7.69179911 C8.00761638,7.90837271 7.75191677,8 7.50047882,8 C7.24904087,8 6.9941936,7.90887249 6.7973049,7.72670078 L0.319581505,1.73186032 C-0.0908163652,1.34869165 -0.107863006,0.715630362 0.2795219,0.315802183 C0.66861147,-0.0881908732 1.31851464,-0.100685504 1.72592935,0.278318291 L7.50047882,5.62185531 L13.2750283,0.274153414 C13.6825282,-0.104600488 14.3297892,-0.0902733116 14.7214357,0.313199135 C15.1075421,0.715630362 15.0904955,1.34869165 14.6813761,1.73186032 Z" id="Path" fill="#556374" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

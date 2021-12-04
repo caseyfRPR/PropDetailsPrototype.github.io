@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1353px" height="103px" viewBox="0 0 1353 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Search-Bar/Default Copy</title>
+    <defs>
+        <path d="M21.8245615,20.2807018 L17.091618,15.5477583 C17.0019493,15.4580897 16.8849903,15.4113061 16.7602339,15.4113061 L16.2456141,15.4113061 C17.4736842,13.9883041 18.2183236,12.1364522 18.2183236,10.1091618 C18.2183236,5.6296296 14.588694,1.99999995 10.1091618,1.99999995 C5.6296296,1.99999995 1.99999995,5.6296296 1.99999995,10.1091618 C1.99999995,14.588694 5.6296296,18.2183236 10.1091618,18.2183236 C12.1364522,18.2183236 13.9883041,17.4736842 15.4113061,16.2456141 L15.4113061,16.7602339 C15.4113061,16.8849903 15.4619883,17.0019493 15.5477583,17.091618 L20.2807018,21.8245615 C20.4639377,22.0077973 20.760234,22.0077973 20.9434698,21.8245615 L21.8245615,20.9434698 C22.0077973,20.760234 22.0077973,20.4639377 21.8245615,20.2807018 Z M10.1091618,16.3469786 C6.662768,16.3469786 3.87134499,13.5555556 3.87134499,10.1091618 C3.87134499,6.662768 6.662768,3.87134499 10.1091618,3.87134499 C13.5555556,3.87134499 16.3469786,6.662768 16.3469786,10.1091618 C16.3469786,13.5555556 13.5555556,16.3469786 10.1091618,16.3469786 Z" id="path-1"></path>
+        <filter color-interpolation-filters="auto" id="filter-3">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.228428 0 0 0 0 0.286514 0 0 0 0 0.344599 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter color-interpolation-filters="auto" id="filter-4">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.228428 0 0 0 0 0.286514 0 0 0 0 0.344599 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter color-interpolation-filters="auto" id="filter-5">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.228428 0 0 0 0 0.286514 0 0 0 0 0.344599 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter color-interpolation-filters="auto" id="filter-6">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter color-interpolation-filters="auto" id="filter-7">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.228428 0 0 0 0 0.286514 0 0 0 0 0.344599 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter color-interpolation-filters="auto" id="filter-8">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.228428 0 0 0 0 0.286514 0 0 0 0 0.344599 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter color-interpolation-filters="auto" id="filter-9">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.439216 0 0 0 0 0.756863 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Tabs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="1344" height="103"></rect>
+            <g transform="translate(130.000000, 20.000000)" id="Form-/-Field-/-Label-/-Search-/-40px/-Attached-Button">
+                <g id="Field" transform="translate(0.000000, 23.000000)">
+                    <g id="Field">
+                        <g id="Base">
+                            <rect id="Background" fill="#FFFFFF" x="0" y="0" width="385" height="40"></rect>
+                            <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="384" height="39"></rect>
+                        </g>
+                        <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                            <tspan x="16" y="23">Enter Address, Place, APN/Tax IDs or Listing IDs</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(383.000000, 0.000000)">
+                        <g id="Base" fill="#0070C1">
+                            <path d="M0,0 L54,0 C57.3137085,-6.08718376e-16 60,2.6862915 60,6 L60,34 C60,37.3137085 57.3137085,40 54,40 L0,40 L0,40 L0,0 Z" id="Background"></path>
+                        </g>
+                        <g transform="translate(18.000000, 8.000000)" id="Icon">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="search" fill-rule="nonzero"></g>
+                            <g id="Group" mask="url(#mask-2)" fill="#FFFFFF" stroke="#979797">
+                                <g id="🎨-color">
+                                    <rect id="Rectangle" x="0.5" y="0.5" width="23" height="23"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <text id="Label" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="21" letter-spacing="0.153125" fill="#556374">
+                    <tspan x="0" y="13">LOCATION</tspan>
+                </text>
+            </g>
+            <g transform="translate(587.000000, 20.000000)" id="Form/Field/Label/Search/Dropdown/40px/140px">
+                <g id="Field" transform="translate(0.000000, 23.000000)">
+                    <g>
+                        <g id="Base">
+                            <rect id="Background" fill="#FFFFFF" x="0" y="0" width="140" height="40"></rect>
+                            <rect id="Border" stroke="#8EA5C2" x="0.5" y="0.5" width="139" height="39"></rect>
+                        </g>
+                        <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#3A4958">
+                            <tspan x="10" y="23">Any</tspan>
+                        </text>
+                    </g>
+                    <g id="angle-down" transform="translate(114.000000, 14.000000)" filter="url(#filter-3)">
+                        <g id="Group" transform="translate(2.250000, -0.000000)" fill="#000000" fill-rule="nonzero">
+                            <path d="M12.6738282,6.21276858 L7.33007816,10.3003418 C7.1683594,10.448877 6.9574219,10.5117188 6.75000003,10.5117188 C6.54257815,10.5117188 6.33234378,10.4492198 6.1699219,10.3242789 L0.826171878,6.21276858 C0.48761719,5.94997561 0.473554689,5.51579592 0.793125003,5.24157717 C1.11410157,4.96450197 1.65023438,4.95593264 1.98632813,5.21586916 L6.75000003,8.88068851 L11.5136719,5.21301272 C11.849836,4.95324758 12.3837891,4.96307375 12.7068751,5.23979189 C13.0253907,5.51579592 13.0113282,5.94997561 12.6738282,6.21276858 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+                <text id="Label" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="21" letter-spacing="0.153125" fill="#556374">
+                    <tspan x="0" y="13">TYPE/STATUS</tspan>
+                </text>
+            </g>
+            <g transform="translate(1055.000000, 20.000000)" id="Form/Field/Label/Search/Dropdown/40px/96px">
+                <g id="Field" transform="translate(0.000000, 23.000000)">
+                    <g>
+                        <g id="Base">
+                            <rect id="Background" fill="#FFFFFF" x="0" y="0" width="96" height="40"></rect>
+                            <rect id="Border" stroke="#8EA5C2" x="0.5" y="0.5" width="95" height="39"></rect>
+                        </g>
+                        <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#3A4958">
+                            <tspan x="10" y="23">Any</tspan>
+                        </text>
+                    </g>
+                    <g id="angle-down" transform="translate(70.000000, 12.000000)" filter="url(#filter-4)">
+                        <g id="Group" transform="translate(2.250000, -0.000000)" fill="#000000" fill-rule="nonzero">
+                            <path d="M12.6738282,6.21276858 L7.33007816,10.3003418 C7.1683594,10.448877 6.9574219,10.5117188 6.75000003,10.5117188 C6.54257815,10.5117188 6.33234378,10.4492198 6.1699219,10.3242789 L0.826171878,6.21276858 C0.48761719,5.94997561 0.473554689,5.51579592 0.793125003,5.24157717 C1.11410157,4.96450197 1.65023438,4.95593264 1.98632813,5.21586916 L6.75000003,8.88068851 L11.5136719,5.21301272 C11.849836,4.95324758 12.3837891,4.96307375 12.7068751,5.23979189 C13.0253907,5.51579592 13.0113282,5.94997561 12.6738282,6.21276858 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+                <text id="Label" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="21" letter-spacing="0.153125" fill="#556374">
+                    <tspan x="0" y="13">BEDS</tspan>
+                </text>
+            </g>
+            <g transform="translate(1165.000000, 20.000000)" id="Form/Field/Label/Search/Dropdown/40px/96px-Copy">
+                <g id="Field" transform="translate(0.000000, 23.000000)">
+                    <g>
+                        <g id="Base">
+                            <rect id="Background" fill="#FFFFFF" x="0" y="0" width="96" height="40"></rect>
+                            <rect id="Border" stroke="#8EA5C2" x="0.5" y="0.5" width="95" height="39"></rect>
+                        </g>
+                        <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#3A4958">
+                            <tspan x="10" y="23">Any</tspan>
+                        </text>
+                    </g>
+                    <g id="angle-down" transform="translate(70.000000, 12.000000)" filter="url(#filter-5)">
+                        <g id="Group" transform="translate(2.250000, -0.000000)" fill="#000000" fill-rule="nonzero">
+                            <path d="M12.6738282,6.21276858 L7.33007816,10.3003418 C7.1683594,10.448877 6.9574219,10.5117188 6.75000003,10.5117188 C6.54257815,10.5117188 6.33234378,10.4492198 6.1699219,10.3242789 L0.826171878,6.21276858 C0.48761719,5.94997561 0.473554689,5.51579592 0.793125003,5.24157717 C1.11410157,4.96450197 1.65023438,4.95593264 1.98632813,5.21586916 L6.75000003,8.88068851 L11.5136719,5.21301272 C11.849836,4.95324758 12.3837891,4.96307375 12.7068751,5.23979189 C13.0253907,5.51579592 13.0113282,5.94997561 12.6738282,6.21276858 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+                <text id="Label" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="21" letter-spacing="0.153125" fill="#556374">
+                    <tspan x="0" y="13">BATHS</tspan>
+                </text>
+            </g>
+            <g transform="translate(1275.000000, 20.000000)" id="search/filters/filterbtn/default">
+                <g id="Button" transform="translate(0.000000, 23.000000)">
+                    <rect id="Container" fill="#8EA5C2" x="0" y="0" width="56" height="40" rx="6"></rect>
+                    <g id="filter" transform="translate(18.000000, 10.000000)" filter="url(#filter-6)">
+                        <g id="Group" transform="translate(-0.000000, 0.000006)" fill="#000000" fill-rule="nonzero">
+                            <path d="M18.7226571,1.2499993 L1.27735434,1.2499993 C0.203644007,1.2499993 -0.389246285,2.47187361 0.288097085,3.28867003 L7.5,11.9843683 L7.5,15.6249912 C7.5,15.9307723 7.64891327,16.217569 7.9003975,16.3929595 L11.0253957,18.5796771 C11.1914113,18.695302 11.3789112,18.7499993 11.5585986,18.7499993 C12.0429733,18.7499993 12.5,18.3671772 12.5,17.7773338 L12.5,11.9843683 L19.7109377,3.28906065 C20.3554686,2.47187361 19.7968752,1.2499993 18.7226571,1.2499993 Z M11.5390673,11.1874937 L11.250005,11.5351498 L11.250005,17.2109278 L8.7500064,15.4613194 L8.7500064,11.5351498 L1.27735434,2.4999986 L18.7226571,2.4999986 L18.749743,2.49053766 L11.5390673,11.1874937 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+                <text id="Label" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="21" letter-spacing="0.153125" fill="#556374">
+                    <tspan x="0" y="13">FILTERS</tspan>
+                </text>
+            </g>
+            <g transform="translate(743.000000, 20.000000)" id="Form/Field/Label/Search/Dropdown/40px/140px-Copy">
+                <g id="Field" transform="translate(0.000000, 23.000000)">
+                    <g>
+                        <g id="Base">
+                            <rect id="Background" fill="#FFFFFF" x="0" y="0" width="140" height="40"></rect>
+                            <rect id="Border" stroke="#8EA5C2" x="0.5" y="0.5" width="139" height="39"></rect>
+                        </g>
+                        <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#3A4958">
+                            <tspan x="10" y="23">Any</tspan>
+                        </text>
+                    </g>
+                    <g id="angle-down" transform="translate(114.000000, 14.000000)" filter="url(#filter-7)">
+                        <g id="Group" transform="translate(2.250000, -0.000000)" fill="#000000" fill-rule="nonzero">
+                            <path d="M12.6738282,6.21276858 L7.33007816,10.3003418 C7.1683594,10.448877 6.9574219,10.5117188 6.75000003,10.5117188 C6.54257815,10.5117188 6.33234378,10.4492198 6.1699219,10.3242789 L0.826171878,6.21276858 C0.48761719,5.94997561 0.473554689,5.51579592 0.793125003,5.24157717 C1.11410157,4.96450197 1.65023438,4.95593264 1.98632813,5.21586916 L6.75000003,8.88068851 L11.5136719,5.21301272 C11.849836,4.95324758 12.3837891,4.96307375 12.7068751,5.23979189 C13.0253907,5.51579592 13.0113282,5.94997561 12.6738282,6.21276858 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+                <text id="Label" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="21" letter-spacing="0.153125" fill="#556374">
+                    <tspan x="0" y="13">PROPERTY TYPE</tspan>
+                </text>
+            </g>
+            <g transform="translate(899.000000, 20.000000)" id="Form/Field/Label/Search/Dropdown/40px/140px-Copy-2">
+                <g id="Field" transform="translate(0.000000, 23.000000)">
+                    <g>
+                        <g id="Base">
+                            <rect id="Background" fill="#FFFFFF" x="0" y="0" width="140" height="40"></rect>
+                            <rect id="Border" stroke="#8EA5C2" x="0.5" y="0.5" width="139" height="39"></rect>
+                        </g>
+                        <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#3A4958">
+                            <tspan x="10" y="23">Any</tspan>
+                        </text>
+                    </g>
+                    <g id="angle-down" transform="translate(114.000000, 14.000000)" filter="url(#filter-8)">
+                        <g id="Group" transform="translate(2.250000, -0.000000)" fill="#000000" fill-rule="nonzero">
+                            <path d="M12.6738282,6.21276858 L7.33007816,10.3003418 C7.1683594,10.448877 6.9574219,10.5117188 6.75000003,10.5117188 C6.54257815,10.5117188 6.33234378,10.4492198 6.1699219,10.3242789 L0.826171878,6.21276858 C0.48761719,5.94997561 0.473554689,5.51579592 0.793125003,5.24157717 C1.11410157,4.96450197 1.65023438,4.95593264 1.98632813,5.21586916 L6.75000003,8.88068851 L11.5136719,5.21301272 C11.849836,4.95324758 12.3837891,4.96307375 12.7068751,5.23979189 C13.0253907,5.51579592 13.0113282,5.94997561 12.6738282,6.21276858 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+                <text id="Label" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="21" letter-spacing="0.153125" fill="#556374">
+                    <tspan x="0" y="13">PRICE</tspan>
+                </text>
+            </g>
+            <g transform="translate(0.000000, 26.000000)">
+                <text id="Commercial" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="24" letter-spacing="0.4375" fill="#9EB4CC">
+                    <tspan x="39" y="42">Commercial</tspan>
+                </text>
+                <text id="Residential" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold" line-spacing="24" letter-spacing="0.4375" fill="#3A4958">
+                    <tspan x="39" y="15">Residential</tspan>
+                </text>
+                <g id="Button-/-Toggle-/-Default" transform="translate(1.000000, -0.000000)">
+                    <path d="M-13.5,28.5 C-13.5,20.2157288 -6.79376163,13.5 1.49470893,13.5 L28.5052911,13.5 C36.7866401,13.5 43.5,20.2139073 43.5,28.5 L43.5,28.5 C43.5,36.7842712 36.7937616,43.5 28.5052911,43.5 L1.49470893,43.5 C-6.78664014,43.5 -13.5,36.7860927 -13.5,28.5 L-13.5,28.5 Z" id="Outer" fill="#0070C1" transform="translate(15.000000, 28.500000) rotate(-270.000000) translate(-15.000000, -28.500000) "></path>
+                    <path d="M14.95,26.5 C21.0251325,26.5 25.95,21.5751325 25.95,15.5 C25.95,9.42486745 21.0251325,4.5 14.95,4.5 C8.87486745,4.5 3.95,9.42486745 3.95,15.5 C3.95,21.5751325 8.87486745,26.5 14.95,26.5 Z" id="Inner-Circle" fill="#FFFFFF" transform="translate(14.950000, 15.500000) rotate(-270.000000) translate(-14.950000, -15.500000) "></path>
+                </g>
+            </g>
+            <g transform="translate(1331.000000, 20.000000)" id="ellipsis-v" filter="url(#filter-9)">
+                <g id="Group" transform="translate(8.250000, -0.000000)" fill="#000000" fill-rule="nonzero">
+                    <path d="M2.75000001,4.81250002 C3.88867189,4.81250002 4.81250002,3.88867189 4.81250002,2.75000001 C4.81250002,1.61132813 3.88867189,0.687500003 2.75000001,0.687500003 C1.61132813,0.687500003 0.687500003,1.61132813 0.687500003,2.75000001 C0.687500003,3.88867189 1.61132813,4.81250002 2.75000001,4.81250002 Z M2.75000001,17.1875001 C1.61132813,17.1875001 0.687500003,18.1113282 0.687500003,19.2500001 C0.687500003,20.388672 1.61132813,21.3125001 2.75000001,21.3125001 C3.88867189,21.3125001 4.81250002,20.388672 4.81250002,19.2500001 C4.81250002,18.1113282 3.88867189,17.1875001 2.75000001,17.1875001 Z M2.75000001,8.93750004 C1.61132813,8.93750004 0.687500003,9.86132817 0.687500003,11 C0.687500003,12.1386719 1.61132813,13.0625001 2.75000001,13.0625001 C3.88867189,13.0625001 4.81250002,12.1386719 4.81250002,11 C4.81250002,9.86132817 3.88867189,8.93750004 2.75000001,8.93750004 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

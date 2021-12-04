@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="77px" viewBox="0 0 87 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Map Views/Elements/Traffic Line</title>
+    <defs>
+        <radialGradient cx="1.94824856%" cy="25.535591%" fx="1.94824856%" fy="25.535591%" r="132.907174%" gradientTransform="translate(0.019482,0.255356),scale(0.885057,1.000000),rotate(33.906939),translate(-0.019482,-0.255356)" id="radialGradient-1">
+            <stop stop-color="#D0E7F8" offset="0%"></stop>
+            <stop stop-color="#EEF7FD" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Tabs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prop-Details---Map/Location" transform="translate(-352.000000, -1985.000000)">
+            <g id="Map-Shortcuts" transform="translate(328.000000, 1813.000000)">
+                <g id="Group" transform="translate(24.000000, 172.000000)">
+                    <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="86" height="76" rx="8"></rect>
+                    <rect id="Rectangle" fill="url(#radialGradient-1)" x="0" y="0" width="87" height="77" rx="8"></rect>
+                    <path d="M38.5,1 L43.5,0 C42.5,34.6666667 42,52.6666667 42,54 C42,56 40.5,76 40.5,76.5 C40.5,76.8333333 39,76.8333333 36,76.5 L38.5,1 Z" id="Path-2"></path>
+                    <polygon id="Path-3" fill="#FFFFFF" points="0 31 0 39 87 39 87 31"></polygon>
+                    <g transform="translate(4.000000, 7.000000)" fill="#EB661B" id="Triangle">
+                        <polygon points="12 0 24 16 0 16"></polygon>
+                    </g>
+                    <g transform="translate(59.000000, 47.000000)" fill="#B39DF2" id="Map-/-Elements-/-Popover-/-Traffic-/-Pin-/-Purple-Copy">
+                        <polygon id="Triangle" points="12 0 24 15 0 15"></polygon>
+                    </g>
+                    <rect id="Rectangle" fill="#FFBB2F" x="35.998641" y="0" width="6" height="77"></rect>
+                    <rect id="Rectangle-Copy" fill="#FFBB2F" x="44.998641" y="7.10542736e-15" width="6" height="77"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

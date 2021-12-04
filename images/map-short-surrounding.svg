@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="77px" viewBox="0 0 87 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Map Views/Elements/Surrounding Geo</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="87" height="77" rx="8"></rect>
+        <radialGradient cx="1.94824856%" cy="25.535591%" fx="1.94824856%" fy="25.535591%" r="132.907174%" gradientTransform="translate(0.019482,0.255356),scale(0.885057,1.000000),rotate(33.906939),translate(-0.019482,-0.255356)" id="radialGradient-3">
+            <stop stop-color="#D0E7F8" offset="0%"></stop>
+            <stop stop-color="#EEF7FD" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="22.4520749%" y1="25.535591%" x2="78.6648502%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#80CAFF" offset="0%"></stop>
+            <stop stop-color="#C7E8FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Tabs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prop-Details---Map/Location" transform="translate(-352.000000, -2187.000000)">
+            <g id="Map-Shortcuts" transform="translate(328.000000, 1813.000000)">
+                <g id="Rectangle-+-Path-3-+-Rectangle-+-Rectangle-Copy-+-Rectangle-Copy-2-+-Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-3-+-Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-5-+-Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-4-+-Rectangle-+-Rectangle-+-Rectangle-Mask" transform="translate(24.000000, 374.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <rect id="Rectangle" fill="url(#radialGradient-3)" mask="url(#mask-2)" x="0" y="0" width="87" height="77" rx="8"></rect>
+                    <polygon id="Path-3" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(6.700244, 65.219832) rotate(56.000000) translate(-6.700244, -65.219832) " points="-9.66429719 62.2637642 -0.544883889 68.4148862 18.8708392 68.2425593 23.064786 62.0247775"></polygon>
+                    <rect id="Rectangle" fill-opacity="0.5" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(15.772122, 24.963642) rotate(-35.000000) translate(-15.772122, -24.963642) " x="-7.22787804" y="10.9636424" width="46" height="28"></rect>
+                    <rect id="Rectangle-Copy" fill-opacity="0.5" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(33.772122, 50.963642) rotate(-35.000000) translate(-33.772122, -50.963642) " x="10.772122" y="36.9636424" width="46" height="28"></rect>
+                    <polygon id="Rectangle-Copy-2" fill-opacity="0.5" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(54.040410, 76.075578) rotate(-35.000000) translate(-54.040410, -76.075578) " points="32.588704 62.1834427 75.4921162 62.0755775 75.4921162 90.0755775 72.3175781 90.0018998"></polygon>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(26.998641, 42.000000)" id="Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-3">
+                            <path d="M8,1.33333333 C11.6818983,1.33333333 14.6666667,4.31810167 14.6666667,8 C14.6666667,11.6818983 11.6818983,14.6666667 8,14.6666667 C4.31810167,14.6666667 1.33333333,11.6818983 1.33333333,8 C1.33333333,4.31810167 4.31810167,1.33333333 8,1.33333333 Z" id="Color" fill="#DE4329"></path>
+                            <path d="M16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 -2.36847579e-15,12.418278 -2.36847579e-15,8 C-2.36847579e-15,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 Z M14.6666667,8 C14.6666667,4.31810167 11.6818983,1.33333333 8,1.33333333 C4.31810167,1.33333333 1.33333333,4.31810167 1.33333333,8 C1.33333333,11.6818983 4.31810167,14.6666667 8,14.6666667 C11.6818983,14.6666667 14.6666667,11.6818983 14.6666667,8 Z" id="Outline" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(46.998641, 68.000000)" id="Pin-/-Off-Close-Withdr_Exp_Cancel-Copy">
+                            <path d="M16,0 L16,16 L0,16 L0,0 L16,0 Z M14.6666667,1.33333333 L1.33333333,1.33333333 L1.33333333,14.6666667 L14.6666667,14.6666667 L14.6666667,1.33333333 Z" id="Outline" fill="#FFFFFF"></path>
+                            <polygon id="Color" fill="#8EA5C2" points="14.6666667 1.33333333 14.6666667 14.6666667 1.33333333 14.6666667 1.33333333 1.33333333"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(7.998641, 16.000000)" id="Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-4">
+                            <path d="M8,1.33333333 C11.6818983,1.33333333 14.6666667,4.31810167 14.6666667,8 C14.6666667,11.6818983 11.6818983,14.6666667 8,14.6666667 C4.31810167,14.6666667 1.33333333,11.6818983 1.33333333,8 C1.33333333,4.31810167 4.31810167,1.33333333 8,1.33333333 Z" id="Color" fill="#FFBB2F"></path>
+                            <path d="M16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 Z M14.6666667,8 C14.6666667,4.31810167 11.6818983,1.33333333 8,1.33333333 C4.31810167,1.33333333 1.33333333,4.31810167 1.33333333,8 C1.33333333,11.6818983 4.31810167,14.6666667 8,14.6666667 C11.6818983,14.6666667 14.6666667,11.6818983 14.6666667,8 Z" id="Outline" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                    <path d="M39,0.105526179 C44.9333659,16.1946214 48.9333659,25.3612881 51,27.6055262 C55.9000488,32.9266792 62.8061398,36.3389684 67,42.1055262 C71,47.6055262 73.3550049,53.0806607 77.5,56.6055262 C80.0700033,58.7910332 83.2366699,61.0891911 87,63.5 L47,63.5 C42.581722,63.5 39,59.918278 39,55.5 L39,0.105526179 L39,0.105526179 Z" id="Rectangle" fill="url(#linearGradient-4)" mask="url(#mask-2)" transform="translate(63.000000, 31.802763) scale(-1, -1) translate(-63.000000, -31.802763) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

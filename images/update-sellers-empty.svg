@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="792px" height="976px" viewBox="0 0 792 976" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Table</title>
+    <defs>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="111.39201%" gradientTransform="translate(0.000000,0.000000),scale(1.000000,0.908257),rotate(40.775898),translate(-0.000000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#E8F4FC" offset="0%"></stop>
+            <stop stop-color="#F8FCFF" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#0086E6" offset="0%"></stop>
+            <stop stop-color="#0070C1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Tabs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prop-Details---My-Updates---additional-Cards" transform="translate(-832.000000, -2904.000000)">
+            <g id="Add-updates---Seller's-Proceeds-Empty" transform="translate(783.000000, 2651.000000)">
+                <g id="Table" transform="translate(49.000000, 253.000000)">
+                    <rect id="Container" fill="url(#radialGradient-1)" x="0" y="32" width="792" height="872"></rect>
+                    <path d="M8,0 L784,0 C788.418278,-6.35991312e-14 792,3.581722 792,8 L792,32 L792,32 L0,32 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Header" fill="url(#linearGradient-2)"></path>
+                    <path d="M791.5,32.5 L791.5,968 C791.5,970.071068 790.660534,971.946068 789.303301,973.303301 C787.946068,974.660534 786.071068,975.5 784,975.5 L784,975.5 L8,975.5 C5.92893219,975.5 4.05393219,974.660534 2.69669914,973.303301 C1.33946609,971.946068 0.5,970.071068 0.5,968 L0.5,968 L0.5,32.5 L791.5,32.5 Z" id="Border" stroke="#DCE3ED"></path>
+                    <g id="Net-Cash-to-Seller" transform="translate(24.000000, 920.000000)">
+                        <g id="High" transform="translate(535.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#0070C1" stroke-width="2" x="1" y="1" width="206" height="38"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(267.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#0070C1" stroke-width="2" x="1" y="1" width="206" height="38"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Bold, Roboto" font-size="20" font-weight="bold" fill="#2C2C2C">
+                            <tspan x="0" y="26">Net Cash to Seller</tspan>
+                        </text>
+                    </g>
+                    <g id="Other" transform="translate(24.000000, 848.000000)">
+                        <g id="High" transform="translate(536.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(268.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" fill="#2C2C2C">
+                            <tspan x="0" y="26">Other</tspan>
+                        </text>
+                    </g>
+                    <g id="Seller-Conveyances" transform="translate(24.000000, 798.000000)">
+                        <g id="High" transform="translate(536.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(268.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" fill="#2C2C2C">
+                            <tspan x="0" y="26">Seller Conveyance</tspan>
+                        </text>
+                    </g>
+                    <g id="Seller-Concessions" transform="translate(24.000000, 748.000000)">
+                        <g id="High" transform="translate(536.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(268.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" fill="#2C2C2C">
+                            <tspan x="0" y="26">Seller Concessions</tspan>
+                        </text>
+                    </g>
+                    <g id="Title-Insurance" transform="translate(48.000000, 692.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Title Insurance</tspan>
+                        </text>
+                    </g>
+                    <g id="Termite-Work" transform="translate(48.000000, 642.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Termite Work</tspan>
+                        </text>
+                    </g>
+                    <g id="Tax-Stamp" transform="translate(48.000000, 592.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Tax Stamp</tspan>
+                        </text>
+                    </g>
+                    <g id="Pest-Inspection" transform="translate(48.000000, 542.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Pest Inspection</tspan>
+                        </text>
+                    </g>
+                    <g id="Other-Work" transform="translate(48.000000, 492.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Other Work</tspan>
+                        </text>
+                    </g>
+                    <g id="Home-Warranty" transform="translate(48.000000, 442.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Home Warranty</tspan>
+                        </text>
+                    </g>
+                    <g id="Escrow-Fee" transform="translate(48.000000, 392.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Escrow Fee</tspan>
+                        </text>
+                    </g>
+                    <g id="Escrow-Time" transform="translate(48.000000, 342.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Escrow Time</tspan>
+                        </text>
+                    </g>
+                    <g id="Commisions" transform="translate(48.000000, 292.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Commissions</tspan>
+                        </text>
+                    </g>
+                    <text id="Estimated-Closing-Costs" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" fill="#2C2C2C">
+                        <tspan x="24" y="272">Estimated Closing Costs</tspan>
+                    </text>
+                    <g id="Second-Loan" transform="translate(48.000000, 199.000000)">
+                        <g id="High" transform="translate(512.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g id="High" transform="translate(244.000000, 0.000000)">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">Second Loan</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(48.000000, 149.000000)">
+                        <g transform="translate(512.000000, 0.000000)" id="High">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g transform="translate(244.000000, 0.000000)" id="High">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#2C2C2C">
+                            <tspan x="0" y="26">First Loan</tspan>
+                        </text>
+                    </g>
+                    <text id="Encumberances" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" fill="#2C2C2C">
+                        <tspan x="24" y="129">Encumberances</tspan>
+                    </text>
+                    <g id="Group" transform="translate(24.000000, 56.000000)">
+                        <g transform="translate(536.000000, 0.000000)" id="High">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <g transform="translate(268.000000, 0.000000)" id="High">
+                            <g id="Base">
+                                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="208" height="40"></rect>
+                                <rect id="Border" stroke="#C3D0E0" x="0.5" y="0.5" width="207" height="39"></rect>
+                            </g>
+                            <text id="Text" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.0299999993" fill="#8EA5C2">
+                                <tspan x="16" y="23">$ 0</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" fill="#2C2C2C">
+                            <tspan x="0" y="26">Price</tspan>
+                        </text>
+                    </g>
+                    <text id="High" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="562" y="23">High</tspan>
+                    </text>
+                    <text id="Low" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="294" y="23">Low</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
