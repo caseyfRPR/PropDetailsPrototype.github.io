@@ -1,0 +1,520 @@
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Realtor's Property Resource - Property Details Test</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5bd0e4dcca.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/nav_btn_dropdown.js"defer></script>
+        <script src='scripts/pin_nav.js' defer></script>
+        <script src='scripts/updatePhotos.js'defer></script>
+        <script src='scripts/updateNotes.js'defer></script>
+        <script src='scripts/save_snackbar.js'></script>
+        <script src='scripts/myUpdatesDropdown.js'></script>
+        <script src='scripts/smoothScrollLocal.js'defer></script>
+        <script src='scripts/backToTop.js'defer></script>
+
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <div class="top-nav-container" id="page">
+            <div class="top-nav">
+              <div class="buffer"><img class="global-nav" src="images/global-navbar.png"/>
+              </div>
+            </div>
+            <hr/>
+            <div class="top-nav">
+              <div class="buffer"><img class="search-bar" src="images/search.png"/></div>
+            </div>
+          </div>
+          <div class="breadcrumb-cont">
+            <div class="breadcrumb buffer">
+               <p><a href="#" class="link">Home &nbsp / &nbsp Property Search &nbsp / &nbsp Search Results &nbsp /&nbsp</a><b>&nbsp 2332 Newport Blvd</b>
+               </p>
+             </div>
+          </div>
+
+          <!-- Start Address Bar -->
+          <div class="address-bar">
+            <div class="buffer address-card-header">
+              <div class="address-label"><img class="address-prop-type" src="images/icon-residential.svg"/><h3>1092 Castlegate Ln.</h3><p>Santa Ana, CA 92706</p>
+              </div>
+              <div class="address-tool-bar">
+                <ul class="address-tool-items toggle-save">
+                  <!-- <li><a href="#"><i class="fal fa-envelope-open-text address-icon"></i> &nbsp&nbspMailing Labels</a></li> -->
+                  <li><a href="#"><i class="fal fa-print address-icon"></i> &nbsp&nbspPrint</a></li>
+                  <li><a onclick="openSnack()"  class="save-icon"><i class="fal fa-heart address-icon icon-default"></i>&nbsp&nbspSave</a></li>
+                  <li class="address-report-btn"><a href="#"><i class="fal fa-file-chart-pie address-icon"></i> &nbsp&nbspCreate Report</a></li>
+                  <!-- Save dialog -->
+                  <div class="dialog-cont save-dialog-close" id="saveDialog">
+                    <div class="save-dialog">
+                      <div><i class="fas fa-heart address-icon icon-active"></i>&nbsp&nbspSave to</div>
+                      <div class="save-snack">
+                        <label class="l2">My Properties</label>
+                      </div>
+                      <form>
+                        <div class="form-row">
+                          <div class="form-label">
+                            <label for="propname" class>Property Name</label>
+                          </div>
+                          <div class="form-input">
+                            <input  class="form-field" type="text" id="propname" name="propertyname" placeholder="1092 Castlegate Ln, Santa Ana, CA 92706" />
+                          </div>
+                        </div>
+                      </form>
+                      <div class="btn-cont">
+                        <button type="button" class="btn-40 btn-primary btn-w-100" id="savePropBtn">Save</button>
+                        <button type="button" class="btn-40 btn-secondary btn-w-100" id="CancelSavePropBtn">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Save snackbar -->
+                  <div id="saveSnack" class="hide-snack snack">
+                    <div><i class="fas fa-heart address-icon icon-active" id="saveIcon"></i>&nbsp&nbspSaved to</div>
+                    <div class="save-snack">
+                      <label class="l2">My Properties</label>
+                    </div>
+                    <div>
+                      <a>Go to my saved properties</a>
+                    </div>
+                  </div>
+                    <!-- Remove snackbar -->
+                  <div id="removeSnack" class="hide-snack snack">
+                    <div><i class="fal fa-heart address-icon icon-default" id="unsaveIcon"></i>&nbsp&nbspRemoved from</div>
+                    <div class="save-snack">
+                      <label class="l2">My Properties</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Summary Details -->
+          <div class="sum-det-cont">
+            <div class="buffer summary-card-cont">
+              <div class="media-viewer-cont">
+                <img src="images/media-viewer-control.png" class="img-card-scale"/>
+                <div class="media-img">
+
+                </div>
+                <div class="media-img-toolbar-cont">
+                  <a href="my-updates.html#updateTabs" class="btn-40 btn-secondary"><span class="btn-text-align"><i class="fal fa-plus-circle address-icon"></i>Add Photos</span></a>
+                  <div class="media-pagination-cont">
+                    <div class="l3 gray7">46 Photos</div>
+                    <div class="img-pagination">
+                      <a href="#"><i class="far fa-chevron-left"></i></a>
+                      <a href="#" id="img-active">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#"><i class="fal fa-ellipsis-h"></i></a>
+                      <a href="#"><i class="far fa-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <img class="sum-details" src="images/summary-details.jpg"/>
+            </div>
+          </div>
+          <!-- End Summary Details -->
+
+            <!-- Start Page Title -->
+            <div class="page-title-cont section" id="subnav">
+                <div class="page-title buffer">
+                  <p class="sh2">My Updates</p>
+               </div>
+            </div>
+            <!-- End Page Title -->
+        </header>
+        <!-- Start Subnav -->
+        <nav class="pinNav">
+          <div class="wrapper buffer">
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li>
+                <a href="property-info.html#subnav" class="desktop-item">Property Information</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Property Information</label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>Listing Information</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#descrip" class="scroll">Description</a></li>
+                        <li><a href="property-info.html#descrip" class="scroll">Open House</a></li>
+                        <li><a href="property-info.html#propFacts" class="scroll">Property Facts</a></li>
+                        <li><a href="property-info.html#features" class="scroll">Features</a></li>
+                        <li><a href="property-info.html#homeowners" class="scroll">Homeowners Association</a></li>
+                        <li><a href="property-info.html#listingDet" class="scroll">Listing Details</a></li>
+                        <li><a href="property-info.html#schools" class="scroll">Schools</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Property History</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#statusPriceHist" class="scroll">Status & Price Change History</a></li>
+                        <li><a href="property-info.html#priorSales" class="scroll">Prior Sales Transactions</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Mortgage Records</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Deed Records</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Tax Information</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Distressed Information</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Listing Records</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Property Analysis</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#priceTools" class="scroll">Pricing Tools</a></li>
+                        <li><a href="property-info.html#nearbyMarket" class="scroll">Nearby Market Activity</a></li>
+                        <li><a href="property-info.html#multipleList" class="scroll">Multiple Listings</a></li>
+                        <li><a href="property-info.html#ownerFacts" class="scroll">Owner Facts</a></li>
+                        <li><a href="property-info.html#additionalRes" class="scroll">Additional Resources</a></li>
+                        <li><a href="property-info.html#legalDescrip" class="scroll">Legal Description</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="map-location.html#subnav" class="desktop-item">Map & Location</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Map & Location</label>
+                <ul class="drop-menu">
+                  <li><a href="map-location.html#fullMap" class="scroll">Map</a></li>
+                  <li><a href="map-location.html#mapShort" class="scroll">Map Shortcuts</a></li>
+                  <li><a href="map-location.html#locationDet" class="scroll">Location Details</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="market-trends.html#subnav" class="desktop-item">Market Trends</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Market Trends</label>
+                <ul class="drop-menu">
+                  <li><a href="market-trends.html#marketTrends" class="scroll">Market Trends</a></li>
+                  <li><a href="market-trends.html#activeList" class="scroll">Active Listings</a></li>
+                  <li><a href="market-trends.html#listingInvent" class="scroll">Listing Inventory</a></li>
+                  <li><a href="market-trends.html#distressedInvent" class="scroll">Distressed Property Inventory</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="pricing-stats.html#subnav" class="desktop-item">Pricing Statistics</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Pricing Statistics</label>
+                <ul class="drop-menu">
+                  <li><a href="pricing-stats.html#soldList" class="scroll">Sold Listings</a></li>
+                  <li><a href="pricing-stats.html#salesFinancing" class="scroll">Sales and Financing Activity</a></li>
+                  <li><a href="pricing-stats.html#medianSalesSqft" class="scroll">Median Sales Price by Sqft</a></li>
+                  <li><a href="pricing-stats.html#soldCompStats" class="scroll">Price Range of Homes Sold</a></li>
+                </ul>
+              </li>
+              <li><a href="#subnav">CMA</a></li>
+              <li>
+                <a href="refine-value.html#subnav" class="desktop-item">Refine Value</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Refine Value</label>
+                <ul class="drop-menu">
+                  <li><a href="refine-value.html#basicFacts" class="scroll">Basic Facts</a></li>
+                  <li><a href="refine-value.html#homeImprovements" class="scroll">Adjust Home Improvments</a></li>
+                  <li><a href="refine-value.html#neededImprovements" class="scroll">Adjust Needed Improvements</a></li>
+                  <li><a href="refine-value.html#marketHomeCond" class="scroll">Market and Home Conditions</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#subnav" class="desktop-item">Neighborhood</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Neighborhood</label>
+                <ul class="drop-menu">
+                  <li><a href="#">Summary</a></li>
+                  <li><a href="#">Housing</a></li>
+                  <li><a href="#">People</a></li>
+                  <li><a href="#">Economy</a></li>
+                  <li><a href="#">Quality of Life</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="my-updates.html#subnav" class="desktop-item" id="current">My Updates</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">My Updates</label>
+                <ul class="drop-menu">
+                  <li><a href="my-updates.html#notesContent"><label for="notesTab">Add Notes</label></a></li>
+                  <li><a href="my-updates.html#photosContent"><label for="photosTab">Add Photos</label></a></li>
+                  <li><a href="my-updates.html#sellersContent"><label for="sellersTab">Create Seller's Proceeds</label></a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="menu-btn container">
+              <div class="dropdown">
+                <button onclick="openNavDropdown()" class="dropbtn">Create Report &nbsp <i class="far fa-angle-down"></i></button>
+                <ul id="navDropdown" class="dropdown-content" >
+                  <li><a href="#"><i class="fal fa-file-chart-pie"></i> &nbspCreate Report</a></li>
+                  <li><a onclick="openSnack()" class="save-icon"><i class="fal fa-heart icon-default"></i>&nbsp&nbspSave</a></li>
+                  <li><a href="#"><i class="fal fa-print"></i> &nbspPrint</a></li>
+                  <!-- <li><a href="#"><i class="fal fa-envelope-open-text"></i> &nbspMailing Labels</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Subnav -->
+
+      <!-- Start Page Content -->
+      <main>
+        <div class="card-container-myupdate2col buffer">
+          <!-- Column 1 -->
+          <div class="col2">
+            <div class="updates card-base section">
+              <div class="card-header">
+                <h4>My Updates</h4><button class="card-header-expand-btn"><i class="far fa-ellipsis-v"></i></button>
+              </div>
+              <div class="my-updates-cont">
+                <button class="add-update-btn btn-50 btn-primary" id="addUpdateBtn">
+                  <span class="btn-text-align"><i class="fal fa-plus"></i> Add Update</span> <i class="fal fa-angle-down"></i>
+                </button>
+                <ul class="btn-dropdown">
+                  <li><a href="#notesContent"><label for="notesTab"><i class="fal fa-sticky-note"></i> &nbspAdd Note</label></a></li>
+                  <li><a href="#photosContent"><label for="photosTab"><i class="fal fa-image"></i> &nbspAdd Photos</label></a></li>
+                  <li><a href="#sellersContent"><label for="sellersTab"><i class="fal fa-file-alt"></i> &nbspCreate Seller's Proceeds</label></a></li>
+                </ul>
+                <button onclick="#photosContent" class="add-update-btn btn-50 btn-secondary-disabled" id="reportCoverBtn" disabled>
+                  <label for="photosTab"><span class="btn-text-align"><i class="fal fa-file-image"></i> Make Photo Report Cover</span></label>
+                </button>
+
+              </div>
+              <div class="card-footer-none"></div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+              <div class="Col1">
+                <div class="my-updates card-base section">
+                  <div class="card-header" id="updateTabs">
+                    <h4>Add Updates</h4><button class="card-header-expand-btn"><i class="far fa-ellipsis-v"></i></button>
+                  </div>
+                  <div class="tab-card">
+                    <!-- Code for tab buttons -->
+                    <input class="css-tab" type="radio" name="tabs" id="notesTab"/>
+                    <label for="notesTab" id="notesContent">Notes</label>
+                    <input class="css-tab" type="radio" name="tabs" id="photosTab" checked="checked"/>
+                    <label for="photosTab" id="photosContent">Photos</label>
+                    <input class="css-tab" type="radio" name="tabs" id="sellersTab" />
+                    <label for="sellersTab" class="last-tab" id="sellersContent">Seller's Proceeds</label>
+
+                      <!-- Code for tab Contents -->
+
+                      <!-- Note Contents -->
+                      <div class="tab notes-content">
+                        <div class="update mu-note-cont-empty">
+                          <div class="update-note-cont">
+                            <h5 class="update-note-header">Add a Note</h5>
+                            <div id="fillText">
+                              <form class="update-note-textbox">
+                                <textarea class="update-note-text-empty placeholder" rows="8" cols="100">Enter a note here...
+                                </textarea>
+                                <textarea class="update-note-text-filled" rows="8" cols="100">Completely move-in ready. This is in a quiet cul-de-sac and yet very close to shopping, schools, and easy access to major roads. New wood kitchen cabinets and granite countertops brand new stainless steel appliances. Big corner lot with amazing landscaping. Open floor plan, allowing plenty of natural light, with skylights through the living room and primary bathroom. New double panel windows to keep cool in and the heat out.
+
+  A covered front porch and a wood hand-made Gazebo in the rear patio. Bathrooms were completely remodeled with new wood vanities, granite countertops, and new tile. The community has 2 parks with playgrounds. The community park, set on 10 acres, is open from sunrise to sunset and provides a grilling area, playground, and restroom facilities. And the most important NO HOA!!!
+                                </textarea>
+                                <div id="charNum"></div>
+                              </form>
+                            </div>
+
+                          </div>
+
+
+                          <div class="update-note-in-report-cont">
+
+                            <label class="checkbox-cont">Include in My Reports
+                              <input type="checkbox" checked="checked" id="includeInReport" name="includeInReport" value="Include">
+                              <span class="checkmark"></span>
+                            </label>
+
+                            <form action="#">
+                              <div class="drpdown-horiz-label">
+                                <label for="reportDisplayLocation" class="l5">Report Display Location</label>
+                                <div class="select">
+                                  <select name="locations" id="reportDisplayLocation">
+                                    <option value="general">General</option>
+                                    <option value="description">Description</option>
+                                    <option value="propertyfacts">Property Facts</option>
+                                    <option value="location">Location Details</option>
+                                    <option value="legal">Legal Description</option>
+                                    <option value="tax">Tax Information</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
+
+                          </div>
+
+                          <div class="update-btn-cont">
+                            <button type="button" id="saveNoteBtn" class="btn-40 btn-primary-disabled btn-w-150 save-note-btn">Save</button>
+                            <!-- <button type="button" class="btn-40 btn-secondary btn-w-150">Cancel</button> -->
+                          </div>
+                        </div>
+                        <div class="update mu-note-cont-full">
+                          <div class="mu-photo-actions">
+                            <div class="timestamp"><div class="report-display-tag">General</div>
+                            <span>Last edited 11/01/2021</span>
+                            </div>
+                            <div class="card-header-actions">
+                              <div class="card-action-btn-cont">
+                                <div class="card-action-btn" role="btn" aria-pressed="false" tabindex="0">
+                                  <i class="fal fa-edit"></i>Edit
+                                </div>
+                                <div class="card-action-btn" role="btn" aria-pressed="false" tabindex="0">
+                                  <i class="fal fa-expand-alt"></i>Expand
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mu-note-cont">
+                            <p>
+                              Completely move-in ready. This is in a quiet cul-de-sac and yet
+                              very close to shopping, schools, and easy access to major roads.
+                              New wood kitchen cabinets and granite countertops brand new stainless
+                              steel appliances. Big corner lot with amazing landscaping. Open floor
+                              plan, allowing plenty of natural light, with skylights through the living
+                              room and primary bathroom. New double panel windows to keep cool in and the
+                              heat out.
+                              <p/>
+                              <p>
+                              A covered front porch and a wood hand-made Gazebo in the rear patio. Bathrooms
+                              were completely remodeled with new wood vanities, granite countertops, and new
+                              tile. The community has 2 parks with playgrounds. The community park, set on 10
+                              acres, is open from sunrise to sunset and provides a grilling area, playground,
+                              and restroom facilities. And the most important NO HOA!!!
+                            </p>
+                          </div>
+                        </div>
+                        </div>
+
+
+
+                        <div class="tab update photos-content">
+                          <div class="empty-photo" id="updatePhotoEmpty">
+                            <div class="photo-descrip">
+                              <h5>Upload Photos</h5>
+                              <p>Add or edit photo(s). Your photos will appear in your reports.</p>
+                            </div>
+                            <div class="empty-photo-cont">
+                              <img src="images/icon-empty-photo.svg"/>
+                            </div>
+                            <div class="btn-cont-center">
+                              <button class="btn-40 btn-primary btn-w-150" id="myBtn">Upload Photos</button>
+                            </div>
+                          </div>
+                          <div id="updatePhotoFilled" class="mu-photo-filled-cont">
+                            <div class="mu-photo-actions">
+                              <div class="timestamp">Last edited 11/04/2021</div>
+                              <div class="card-header-actions">
+                                <div class="card-action-btn-cont">
+                                  <div class="card-action-btn" role="btn" aria-pressed="false" tabindex="0">
+                                    <i class="fal fa-edit"></i>Edit
+                                  </div>
+                                  <div class="card-action-btn" role="btn" aria-pressed="false" tabindex="0">
+                                    <i class="fal fa-expand-alt"></i>Expand
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mu-photo-cont">
+                              <img src="images/mu-photo-left.jpg" class="mu-img"/>
+                              <img src="images/mu-photo-right.jpg" class="mu-img"/>
+                            </div>
+                          </div>
+
+                          <div id="updateReportCover" class="mu-photo-filled-cont">
+                            <div class="mu-photo-actions">
+                              <div class="timestamp">Last edited 11/04/2021</div>
+                            </div>
+                            <div class="mu-photo-cont">
+                              <img src="images/mu-photo-left.jpg" class="mu-img"/>
+                              <img src="images/mu-photo-right.jpg" class="mu-img"/>
+                            </div>
+                            <div class="mu-report-cov-btn-cont radio-btn-cont">
+                              <div class="radio-btn mu-col">
+                                <input class="radio" type="radio" name="reportcover" id="reportCover1" checked="checked"/>
+                                <label for="reportCover1">Make Report Cover</label>
+                              </div>
+                              <div class="radio-btn mu-col">
+                                <input type="radio" name="reportcover" id="reportCover2"/>
+                                <label for="reportCover2">Make Report Cover</label>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                              <span class="close"><img class="imgCard" src="images/update-add-photos-dialog.png"/>
+                            </span>
+                            </div>
+                       </div>
+
+                       <!-- Save Report Cover buttons -->
+                       <div class="mu-report-btns" id="muReportBtns">
+                         <button type="button" class="btn-40 btn-primary btn-w-150" id="rcSaveBtn">Save</button>
+                         <button type="button" class="btn-40 btn-secondary btn-w-150" id="rcCancelBtn">Cancel</button>
+                         <!-- <a href="#"><i class="fal fa-trash-alt"></i> &nbspRemove Cover Photo</a> -->
+                       </div>
+
+                       <!-- Save snackbar -->
+                       <div id="saveReportCoverSnack" class="hide-snack snack">
+                         <div>Photo made report cover for</div>
+                         <div class="save-snack">
+                           <label class="l2">1092 Castlegate Ln</label>
+                         </div>
+                         <div>
+                           <a>Go to reports</a>
+                         </div>
+                       </div>
+
+                        </div>
+
+
+                      <div class="tab sellers-content">
+                        <div class="update">
+                          <div class="update-sellers-descrip">
+                            <h5>Seller's proceeds</h5>
+                            <p>
+                              Use this page to input your estimates of what the seller might make on the sale of this property.
+                              You can choose to include this page in the Seller's Report or exclude it.
+                            </p>
+                          </div>
+                          <div>
+                            <img class="imgCard" src="images/update-sellers-empty.svg"/>
+                          </div>
+                          <div class="update-btn-cont">
+                            <button type="button" class="btn-40 btn-primary btn-w-150">Save</button>
+                            <!-- <button type="button" class="btn-40 btn-secondary btn-w-150">Cancel</button> -->
+                            <a href="#"><i class="fal fa-redo"></i> &nbspReset</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="card-footer-none"></div>
+                </div>
+              </div>
+        </div>
+        <footer class="card-container-1col buffer">
+          <div class="footer card">
+            <img class="img-card-scale" src="images/footer.png"/>
+          </div>
+        </footer>
+        <a href="#page" class="scrollToTopBtn scrollup" id="backToTop"><img src="images/back-to-top.svg"/></a>
+      </main>
+
+      <!-- End Page Content -->
+      </div>
+
+    </body>
+    </html>

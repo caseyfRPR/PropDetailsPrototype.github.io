@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Realtor's Property Resource - Property Details Test</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5bd0e4dcca.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src='scripts/filterPropInfo.js'></script>
+        <script src='scripts/nav_btn_dropdown.js'></script>
+        <script src='scripts/pin_nav.js'defer></script>
+        <script src='scripts/save_snackbar.js'></script>
+        <script src='scripts/historyExpand.js'></script>
+        <script src='scripts/priorSalesExpand.js'defer></script>
+        <script src='scripts/featuresExpand.js'></script>
+        <script src='scripts/segmentedControl.js'></script>
+        <script src='scripts/openCssTab.js'defer></script>
+        <script src='scripts/smoothScrollLocal.js'defer></script>
+        <script src='scripts/backToTop.js'defer></script>
+        <!-- <script src='scripts/smoothScrollPage.js'></script> -->
+
+
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <div class="top-nav-container" id="page">
+            <div class="top-nav">
+              <div class="buffer"><img class="global-nav" src="images/global-navbar.png"/>
+              </div>
+            </div>
+            <hr/>
+            <div class="top-nav">
+              <div class="buffer"><img class="search-bar" src="images/search.png"/></div>
+            </div>
+          </div>
+          <div class="breadcrumb-cont">
+            <div class="breadcrumb buffer">
+               <p><a href="#" class="link">Home &nbsp / &nbsp Property Search &nbsp / &nbsp Search Results &nbsp /&nbsp</a><b>&nbsp 2332 Newport Blvd</b>
+               </p>
+             </div>
+          </div>
+
+          <!-- Start Address Bar -->
+          <div class="address-bar" id="address">
+            <div class="buffer address-card-header">
+              <div class="address-label"><img class="address-prop-type" src="images/icon-residential.svg"/><h3>1092 Castlegate Ln.</h3><p>Santa Ana, CA 92706</p>
+              </div>
+              <div class="address-tool-bar">
+                <ul class="address-tool-items toggle-save">
+                  <!-- <li><a href="#"><i class="fal fa-envelope-open-text address-icon"></i> &nbsp&nbspMailing Labels</a></li> -->
+                  <li><a href="#"><i class="fal fa-print address-icon"></i> &nbsp&nbspPrint</a></li>
+                  <li><a onclick="openSnack()"  class="save-icon"><i class="fal fa-heart address-icon icon-default"></i>&nbsp&nbspSave</a></li>
+                  <li class="address-report-btn"><a href="#"><i class="fal fa-file-chart-pie address-icon"></i> &nbsp&nbspCreate Report</a></li>
+                  <!-- Save dialog -->
+                  <div class="dialog-cont save-dialog-close" id="saveDialog">
+                    <div class="save-dialog">
+                      <div><i class="fas fa-heart address-icon icon-active"></i>&nbsp&nbspSave to</div>
+                      <div class="save-snack">
+                        <label class="l2">My Properties</label>
+                      </div>
+                      <form>
+                        <div class="form-row">
+                          <div class="form-label">
+                            <label for="propname" class>Property Name</label>
+                          </div>
+                          <div class="form-input">
+                            <input  class="form-field" type="text" id="propname" name="propertyname" placeholder="1092 Castlegate Ln, Santa Ana, CA 92706" />
+                          </div>
+                        </div>
+                      </form>
+                      <div class="btn-cont">
+                        <button type="button" class="btn-40 btn-primary btn-w-100" id="savePropBtn">Save</button>
+                        <button type="button" class="btn-40 btn-secondary btn-w-100" id="CancelSavePropBtn">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Save snackbar -->
+                  <div id="saveSnack" class="hide-snack snack">
+                    <div><i class="fas fa-heart address-icon icon-active" id="saveIcon"></i>&nbsp&nbspSaved to</div>
+                    <div class="save-snack">
+                      <label class="l2">My Properties</label>
+                    </div>
+                    <div>
+                      <a>Go to my saved properties</a>
+                    </div>
+                  </div>
+                    <!-- Remove snackbar -->
+                  <div id="removeSnack" class="hide-snack snack">
+                    <div><i class="fal fa-heart address-icon icon-default" id="unsaveIcon"></i>&nbsp&nbspRemoved from</div>
+                    <div class="save-snack">
+                      <label class="l2">My Properties</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Summary Details -->
+          <div class="sum-det-cont">
+            <div class="buffer summary-card-cont">
+              <div class="media-viewer-cont">
+                <img src="images/media-viewer-control.png" class="img-card-scale"/>
+                <div class="media-img">
+
+                </div>
+                <div class="media-img-toolbar-cont">
+                  <a href="my-updates.html#updateTabs" class="btn-40 btn-secondary"><span class="btn-text-align"><i class="fal fa-plus-circle address-icon"></i>Add Photos</span></a>
+                  <div class="media-pagination-cont">
+                    <div class="l3 gray7">46 Photos</div>
+                    <div class="img-pagination">
+                      <a href="#"><i class="far fa-chevron-left"></i></a>
+                      <a href="#" id="img-active">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#"><i class="fal fa-ellipsis-h"></i></a>
+                      <a href="#"><i class="far fa-chevron-right"></i></a>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+                <img class="sum-details" src="images/summary-details.jpg"/>
+            </div>
+          </div>
+          <!-- End Summary Details -->
+
+            <!-- Start Page Title -->
+            <div class="page-title-cont section"  id="subnav">
+                <div class="page-title buffer">
+                  <div>
+                    <p class="sh2">Property Information</p>
+                  </div>
+                  <div>
+                    <form action="#">
+                      <div class="drpdown-horiz-label filter-drpdown-cont">
+                        <label for="filterpropertyinfo" class="l5">Filter</label>
+                        <div class="select-32 filter-btn" role="dropdown"> All Property Information</div>
+                        <ul class="filter-dropdown">
+                          <li><a href="property-info.html#subnav">All Property Information</a></li>
+                          <li><a href="property-info-listing.html#subnav">Listing Information</a></li>
+                          <li><a href="property-info-public.html#subnav">Public Records</a></li>
+                        </ul>
+                      </div>
+                    </form>
+                  </div>
+               </div>
+            </div>
+            <!-- End Page Title -->
+        </header>
+        <!-- Start Subnav -->
+        <nav class="pinNav">
+          <div class="wrapper buffer">
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li>
+                <a href="property-info.html#subnav" class="desktop-item" id="current">Property Information</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Property Information</label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>Listing Information</header>
+                      <ul class="mega-links">
+                        <li><a onclick="smoothDescrip()">Description</a></li>
+                        <li><a onclick="smoothOpenHouse()">Open House</a></li>
+                        <li><a onclick="smoothPropFacts()">Property Facts</a></li>
+                        <li><a onclick="smoothFeatures()">Features</a></li>
+                        <li><a onclick="smoothHomeowners()">Homeowners Association</a></li>
+                        <li><a onclick="smoothListingDet()">Listing Details</a></li>
+                        <li><a onclick="smoothSchools()">Schools</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Property History</header>
+                      <ul class="mega-links">
+                        <li><a onclick="smoothStatusPrice()">Status & Price Change History</a></li>
+                        <li><a onclick="smoothPriorSales()">Prior Sales Transactions</a></li>
+                        <li><a onclick="smoothMortgage()"><label for="mortgageTab">Mortgage Records</label></a></li>
+                        <li><a onclick="smoothDeed()"><label for="deedTab">Deed Records</label></a></li>
+                        <li><a onclick="smoothTax()"><label for="taxTab">Tax Information</label></label></a></li>
+                        <li><a onclick="smoothDistressed()"><label for="distressedTab">Distressed Information</label></label></a></li>
+                        <li><a onclick="smoothListingRec()"><label for="listingTab">Listing Records</label></label></a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Property Analysis</header>
+                      <ul class="mega-links">
+                        <li><a onclick="smoothPricingTools()">Pricing Tools</a></li>
+                        <li><a onclick="smoothNearbyMarket()">Nearby Market Activity</a></li>
+                        <li><a onclick="smoothMultipleList()">Multiple Listings</a></li>
+                        <li><a onclick="smoothOwnerFacts()">Owner Facts</a></li>
+                        <li><a onclick="smoothadditionalRes()">Additional Resources</a></li>
+                        <li><a onclick="smoothLegalDescrip()">Legal Description</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="map-location.html#subnav" class="desktop-item">Map & Location</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Map & Location</label>
+                <ul class="drop-menu">
+                  <li><a href="map-location.html#fullMap">Map</a></li>
+                  <li><a href="map-location.html#mapShort">Map Shortcuts</a></li>
+                  <li><a href="map-location.html#locationDet">Location Details</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="market-trends.html#subnav" class="desktop-item">Market Trends</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Market Trends</label>
+                <ul class="drop-menu">
+                  <li><a href="market-trends.html#marketTrends">Market Trends</a></li>
+                  <li><a href="market-trends.html#activeList">Active Listings</a></li>
+                  <li><a href="market-trends.html#listingInvent">Listing Inventory</a></li>
+                  <li><a href="market-trends.html#distressedInvent">Distressed Property Inventory</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="pricing-stats.html#subnav" class="desktop-item">Pricing Statistics</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Pricing Statistics</label>
+                <ul class="drop-menu">
+                  <li><a href="pricing-stats.html#soldList">Sold Listings</a></li>
+                  <li><a href="pricing-stats.html#salesFinancing">Sales and Financing Activity</a></li>
+                  <li><a href="pricing-stats.html#medianSalesSqft">Median Sales Price by Sqft</a></li>
+                  <li><a href="pricing-stats.html#soldCompStats">Price Range of Homes Sold</a></li>
+                </ul>
+              </li>
+              <li><a href="#subnav">CMA</a></li>
+              <li>
+                <a href="refine-value.html#subnav" class="desktop-item">Refine Value</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Refine Value</label>
+                <ul class="drop-menu">
+                  <li><a href="refine-value.html#basicFacts">Basic Facts</a></li>
+                  <li><a href="refine-value.html#homeImprovements">Adjust Home Improvments</a></li>
+                  <li><a href="refine-value.html#neededImprovements">Adjust Needed Improvements</a></li>
+                  <li><a href="refine-value.html#marketHomeCond">Market and Home Conditions</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#subnav" class="desktop-item">Neighborhood</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Neighborhood</label>
+                <ul class="drop-menu">
+                  <li><a href="#">Summary</a></li>
+                  <li><a href="#">Housing</a></li>
+                  <li><a href="#">People</a></li>
+                  <li><a href="#">Economy</a></li>
+                  <li><a href="#">Quality of Life</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="my-updates.html#subnav" class="desktop-item">My Updates</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">My Updates</label>
+                <ul class="drop-menu">
+                  <li><a href="my-updates.html#notesContent"><label for="notesTab">Add Notes</label></a></li>
+                  <li><a href="my-updates.html#photosContent"><label for="photosTab">Add Photos</label></a></li>
+                  <li><a href="my-updates.html#sellersContent"><label for="sellersTab">Create Seller's Proceeds</label></a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="menu-btn container">
+              <div class="dropdown">
+                <button onclick="openNavDropdown()" class="dropbtn">Create Report &nbsp <i class="far fa-angle-down"></i></button>
+                <ul id="navDropdown" class="dropdown-content" >
+                  <li><a href="#"><i class="fal fa-file-chart-pie"></i> &nbspCreate Report</a></li>
+                  <li><a onclick="openSnack()" class="save-icon"><i class="fal fa-heart icon-default"></i>&nbsp&nbspSave</a></li>
+                  <li><a href="#"><i class="fal fa-print"></i> &nbspPrint</a></li>
+                  <!-- <li><a href="#"><i class="fal fa-envelope-open-text"></i> &nbspMailing Labels</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Subnav -->
+
+      <!-- Start Page Content -->
+      <main class="scroll-container">
+        <div class="card-container buffer">
+          <!-- Column 1 -->
+              <div class="Col1">
+
+                <div class="pricingTools card card-med section" id="priceTools">
+                  <img class="img-card-scale" src="images/pricing-tools.png"/>
+                </div>
+
+                <div class="description card card-med section" id="descrip">
+                  <img class="img-card-scale" src="images/descrip-openhouse.png"/>
+                </div>
+
+                <!-- Insert Property Facts -->
+                <div class="propertyFacts card card-med section" id="propFacts">
+                  <img class="img-card-scale" src="images/property-facts.png"/>
+                </div>
+                <!-- Interior Features -->
+                <div class="features card-base card-med section" id="features">
+                  <div class="card-header">
+                    <h4>Interior Features</h4>
+                    <button class="card-header-expand-btn"><i class="far fa-ellipsis-v"></i></button>
+                  </div>
+                  <div class="border-cont shadow-tiny"  id="intFeatures">
+                    <div class="features-wrapper int-feat-collapse" id="intTable">
+                      <div class="features-section">
+                        <span class="sh4">Features</span>
+                      </div>
+                      <div class="section-wrapper">
+                        <table class="features-table">
+                          <tr class="features-th gradient-l-ltblue">
+                            <th>Listing</th>
+                          </tr>
+                          <tbody class="features-cont int-list">
+                            <tr>
+                              <th>Appliances</th>
+                              <td>Dishwasher, Disposal, Electric Water Heater, Range, Range Hood, Refrigerator</td>
+                            </tr>
+                            <tr>
+                              <th>Cooling</th>
+                              <td>Central Air</td>
+                            </tr>
+                            <tr>
+                              <th>Heating</th>
+                              <td>Central Air</td>
+                            </tr>
+                            <tr>
+                              <th>Flooring</th>
+                              <td>Central Air</td>
+                            </tr>
+                            <tr>
+                              <th>Pet</th>
+                              <td>Yes</td>
+                            </tr>
+                            <tr>
+                              <th>General</th>
+                              <td>Cathedral Ceilings, Ceiling Fans, High Ceilings, Kitchen/Family Room Combo, Open Floor Plan , Split Bedrooms, Vaulted Ceiling(s), Walk-In Closet</td>
+                            </tr>
+                            <tr>
+                              <th>Window</th>
+                              <td>Blinds, Rods</td>
+                            </tr>
+                            <tr>
+                              <th>Bonus Features</th>
+                              <td>Attic, Family Room, Great Room</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <table class="features-table">
+                          <tr class="features-th gradient-l-ltblue">
+                            <th>Public</th>
+                          </tr>
+                          <tbody class="features-cont int-pub">
+                            <tr>
+                              <th>Heating Fuel Type</th>
+                              <td>Electric</td>
+                            </tr>
+                            <tr>
+                              <th>Floor Cover</th>
+                              <td>Carpet, Ceramic</td>
+                            </tr>
+                            <tr>
+                              <th>Base Area</th>
+                              <td>1,651 sqft</td>
+                            </tr>
+                            <tr>
+                              <th>Gross Area</th>
+                              <td>2,158 sqft</td>
+                            </tr>
+                            <tr>
+                              <th>Interior Walls</th>
+                              <td>Gypsum Board/Drywall/Sheetrock/ Wallboard</td>
+                            </tr>
+                            <tr>
+                              <th>Garage Finished</th>
+                              <td>462 sqft</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="features-section">
+                        <span class="sh4">Rooms</span>
+                      </div>
+                      <table class="features-table">
+
+                        <tbody class="features-cont rm-list">
+                          <tr>
+                            <th>Bedroom</th>
+                            <td>10x10</td>
+                          </tr>
+                          <tr>
+                            <th>Bedroom</th>
+                            <td>11x10</td>
+                          </tr>
+                          <tr>
+                            <th>Family Room</th>
+                            <td>13x12</td>
+                          </tr>
+                          <tr>
+                            <th>Great Room</th>
+                            <td>23x14</td>
+                          </tr>
+                          <tr>
+                            <th>Primary Bedroom</th>
+                            <td>13x13</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- View More Button -->
+                  <div class="card-expand-cont view-padding">
+                    <button class="if_view_more_btn minimal-btn" aria-label="View More Detail">View More Detail<i class="far fa-chevron-down accordian-icon"></i></button>
+                  </div>
+                  <div class="card-footer-default card-footer-line">
+                    <div>
+                      <strong>Source</strong> Listing/Public
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Exterior Features -->
+                <div class="features card-base card-med section">
+                  <div class="card-header">
+                    <h4>Exterior Features</h4>
+                    <button class="card-header-expand-btn"><i class="far fa-ellipsis-v"></i></button>
+                  </div>
+                  <div class="border-cont shadow-tiny"  id="extFeatures">
+                    <div class="features-wrapper int-feat-collapse" id="extTable">
+                      <div class="features-section">
+                        <span class="sh4">Features</span>
+                      </div>
+                      <div class="section-wrapper">
+                        <table class="features-table">
+                          <tr class="features-th gradient-l-ltblue">
+                            <th>Listing</th>
+                          </tr>
+                          <tbody class="features-cont ext-list">
+                            <tr>
+                              <th>Foundation</th>
+                              <td>Slab</td>
+                            </tr>
+                            <tr>
+                              <th>Roof</th>
+                              <td>Shingle</td>
+                            </tr>
+                            <tr>
+                              <th>Pool</th>
+                              <td>In ground</td>
+                            </tr>
+                            <tr>
+                              <th>Paved</th>
+                              <td>Septic Tank</td>
+                            </tr>
+                            <tr>
+                              <th>Utilities</th>
+                              <td>Electric - Available, Water Available</td>
+                            </tr>
+                            <tr>
+                              <th>Water</th>
+                              <td>Public</td>
+                            </tr>
+                            <tr>
+                              <th>General</th>
+                              <td>Fenced, Sidewalks</td>
+                            </tr>
+                            <tr>
+                              <th>Lot Size Range</th>
+                              <td>0 to less than 1/4</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <table class="features-table">
+                          <tr class="features-th gradient-l-ltblue">
+                            <th>Public</th>
+                          </tr>
+                          <tbody class="features-cont ext-pub">
+                            <tr>
+                              <th>Lot Size - Square Feet</th>
+                              <td>9,287 sqft</td>
+                            </tr>
+                            <tr>
+                              <th>Lot Size - Acres</th>
+                              <td>0.226 ac</td>
+                            </tr>
+                            <tr>
+                              <th>Neighborhood Code</th>
+                              <td>042046139</td>
+                            </tr>
+                            <tr>
+                              <th>Roof Type</th>
+                              <td>Gable or Hip</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="features-section">
+                        <span class="sh4">Building Details</span>
+                      </div>
+                      <table class="features-table">
+                        <tbody class="features-cont bldg-list">
+                          <tr>
+                            <th>Effective Year Built</th>
+                            <td>1999</td>
+                          </tr>
+                          <tr>
+                            <th>Patio</th>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th>Building Quality</th>
+                            <td>C</td>
+                          </tr>
+                          <tr>
+                            <th>Shed</th>
+                            <td>1</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- View More Button -->
+                  <div class="card-expand-cont view-padding">
+                    <button class="ef_view_more_btn minimal-btn" aria-label="View More Detail">View More Detail<i class="far fa-chevron-down accordian-icon"></i></button>
+                  </div>
+                  <div class="card-footer-default card-footer-line">
+                    <div>
+                      <strong>Source</strong> Listing/Public
+                    </div>
+                  </div>
+                </div>
+
+                <div class="listingDetails card card-med section" id="listingDet">
+                  <img class="img-card-scale" src="images/listing-details.png"/>
+                </div>
+
+                <div class="legalDescription card card-med section" id="legalDescrip">
+                  <img class="img-card-scale" src="images/legal-description.png"/>
+                </div>
+
+                <div class="schools card card-med section" id="schools">
+                  <img class="img-card-scale" src="images/schools.png"/>
+                </div>
+
+                <div class="ownerFacts card card-med section" id="ownerFacts">
+                  <img class="img-card-scale" src="images/owner-facts.png"/>
+                </div>
+
+                <div class="priceHistory card card-med section" id="statusPriceHist">
+                  <img class="img-card-scale" src="images/status-price-history.png"/>
+                </div>
+
+                <!-- Prior Sales Transactions-->
+                <div class="prior-sales card-base card-med section" id="priorSales">
+                  <div class="card-header">
+                    <h4>Listing History</h4>
+                    <button class="card-header-expand-btn"><i class="far fa-ellipsis-v"></i></button>
+                  </div>
+
+                  <!--Segemented Control -->
+                  <div class="segmented-control-wrapper">
+                    <div class="segmented-control-wrapper">
+                      <div class="segmented-control-2">
+                        <span class="selection"></span>
+                        <div class="option">
+                          <input type="radio" id="publicRecords" name="salestransactions" value="public" checked>
+                          <label for="publicRecords"><span>Current Listing</span></label>
+                        </div>
+                        <div class="option">
+                          <input type="radio" id="listingRecords" name="salestransactions" value="listing">
+                          <label for="listingRecords"><span>Listing Records</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prior-sales-cont" id="priorSalesCont">
+                    <div class="ps-public">
+                      <div class="table-header-cont"></div>
+
+                      <div role="region" aria-labelledby="caption" tabindex="0" class="prior-sales-table-cont">
+                        <table class="table-prior-sales">
+                          <thead>
+                              <tr class="table-header">
+                                <th>Year</th>
+                                <th>2018</th>
+                                <th>2014</th>
+                                <th>2007</th>
+                                <th>2001</th>
+                                <th>1997</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>Recording Date</th>
+                              <td>3/16/2018</td>
+                              <td>12/11/2014</td>
+                              <td>7/18/2007</td>
+                              <td>4/17/1997</td>
+                              <td>5/24/1992</td>
+                            </tr>
+                            <tr>
+                              <th>Buyer's Name</th>
+                              <td>Frank Poole</td>
+                              <td>David Corell</td>
+                              <td>Clementine Kruszynski</td>
+                              <td>Joel Barish</td>
+                              <td>Sarah Simmons</td>
+                            </tr>
+                            <tr>
+                              <th>Sales Price</th>
+                              <td>$383,000</td>
+                              <td>$315,000</td>
+                              <td>$290,000</td>
+                              <td>$174,000</td>
+                              <td>$75,000</td>
+                            </tr>
+                            <tr>
+                              <th>Price Code</th>
+                              <td>Sales Price or Transfer Tax rounded by county prior to computation. Varies by county.	</td>
+                              <td>Sales Price or Transfer Tax rounded by county prior to computation. Varies by county.	</td>
+                              <td>Sales Price or Transfer Tax rounded by county prior to computation. Varies by county.	</td>
+                              <td>Sales Price or Transfer Tax rounded by county prior to computation. Varies by county.	</td>
+                              <td>Sales Price or Transfer Tax rounded by county prior to computation. Varies by county.	</td>
+                            </tr>
+                            <tr>
+                              <th>Buyer ID</th>
+                              <td>Single Man</td>
+                              <td>Single Man</td>
+                              <td>Single Woman</td>
+                              <td>Single Man</td>
+                              <td>Single Woman</td>
+                            </tr>
+                            <tr>
+                              <th>Loan Amount</th>
+                              <td>$350,000</td>
+                              <td>$256,675</td>
+                              <td>$175,000</td>
+                              <td>$75,000</td>
+                              <td>–</td>
+                            </tr>
+                            <tr>
+                              <th>Buyer Vesting</th>
+                              <td>Revocable Trust</td>
+                              <td>Living Trust</td>
+                              <td>Living Trust</td>
+                              <td>–</td>
+                              <td>–</td>
+                            </tr>
+                            <tr>
+                              <th>Seller Name</th>
+                              <td>David Corell</td>
+                              <td>Clementine Kruszynski</td>
+                              <td>Joel Barish</td>
+                              <td>Sarah Simmons</td>
+                              <td>Michael Caine</td>
+                            </tr>
+                            <tr>
+                              <th>Seller ID</th>
+                              <td>Single Man</td>
+                              <td>Single Woman</td>
+                              <td>Single Man</td>
+                              <td>Single Woman</td>
+                              <td>Single Man</td>
+                            </tr>
+                            <tr>
+                              <th>Lender Name</th>
+                              <td>Western Lendings Institution Inc</td>
+                              <td>Countrywide Home Loans Inc</td>
+                              <td>Countrywide Home Loans Inc</td>
+                              <td>Great Western Home Loans</td>
+                              <td>Israel Discount Bank</td>
+                            </tr>
+                            <tr>
+                              <th>County Transfer Tax</th>
+                              <td>$353</td>
+                              <td>–</td>
+                              <td>–</td>
+                              <td>$276</td>
+                              <td>–</td>
+                            </tr>
+                            <tr>
+                              <th>Buyer Mailing Address</th>
+                              <td>810 E Avalon Ave, Santa Ana, CA 92706</td>
+                              <td>2434 W Edinger Ave, Santa Ana, CA 92704</td>
+                              <td>3415 S manin St. Unit H Santa Ana, CA 92707</td>
+                              <td>–</td>
+                              <td>–</td>
+                            </tr>
+                            <tr>
+                              <th>Document #</th>
+                              <td>2018-057249</td>
+                              <td>2000-057248</td>
+                              <td>2012-021208</td>
+                              <td>2001-036112</td>
+                              <td>–</td>
+                            </tr>
+                            <tr>
+                              <th>Contract Date</th>
+                              <td>3/6/2018</td>
+                              <td>9/31/12</td>
+                              <td>2/22/2001</td>
+                              <td>3/17/1997</td>
+                              <td>4/24/1992</td>
+                            </tr>
+                            <tr>
+                              <th>Inter-family Transfer</th>
+                              <td>–</td>
+                              <td>Yes</td>
+                              <td>–</td>
+                              <td>–</td>
+                              <td>–</td>
+                            </tr>
+                            <tr>
+                              <th>Title Company Name</th>
+                              <td>Lawyers Title</td>
+                              <td>Lawyers Title Company</td>
+                              <td>First American Title</td>
+                              <td>–</td>
+                              <td>–</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="ps-listings">
+                      <div class="table-header-cont"></div>
+
+                      <div role="region" aria-labelledby="caption" tabindex="0" class="prior-sales-table-cont">
+                        <table class="table-prior-sales">
+                          <thead>
+                              <tr class="table-header">
+                                <th>Year</th>
+                                <th>2018</th>
+                                <th>2007</th>
+                                <th>2004</th>
+                                <th>2001</th>
+                                <th>1997</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>Sale Price</th>
+                              <td>$383,543</td>
+                              <td>$290,561</td>
+                              <td>$253,123</td>
+                              <td>$174,789</td>
+                              <td>$75,221</td>
+                            </tr>
+                            <tr>
+                              <th>Sale Date</th>
+                              <td>3/16/2018</td>
+                              <td>12/11/2007</td>
+                              <td>7/18/2004</td>
+                              <td>4/17/1997</td>
+                              <td>5/24/1992</td>
+                            </tr>
+                            <tr>
+                              <th>Office</th>
+                              <td>Haven Properties</td>
+                              <td>Haven Properties</td>
+                              <td>RE/MAX DEL ORO</td>
+                              <td>RE/MAX DEL ORO</td>
+                              <td>RE/MAX DEL ORO</td>
+                            </tr>
+                            <tr>
+                              <th>Office Phone</th>
+                              <td>323-592-2050</td>
+                              <td>323-592-2050</td>
+                              <td>323-432-8901</td>
+                              <td>323-432-8901</td>
+                              <td>323-432-8901</td>
+                            </tr>
+                            <tr>
+                              <th>Selling Agent</th>
+                              <td>Alan Robinson</td>
+                              <td>Alan Robinson</td>
+                              <td>Marcia Fleming</td>
+                              <td>Marcia Fleming</td>
+                              <td>Marcia Fleming</td>
+                            </tr>
+                            <tr>
+                              <th>Selling Office</th>
+                              <td>Haven Properties</td>
+                              <td>Haven Properties</td>
+                              <td>Town & Coastal</td>
+                              <td>Town & Coastal</td>
+                              <td>Town & Coastal</td>
+                            </tr>
+                            <tr>
+                              <th>Listing Agent</th>
+                              <td>Alan Robinson</td>
+                              <td>Alan Robinson</td>
+                              <td>Hal Sweasey</td>
+                              <td>Hal Sweasey</td>
+                              <td>Hal Sweasey</td>
+                            </tr>
+                            <tr>
+                              <th>Listing Agent Email</th>
+                              <td>office@haven.com</td>
+                              <td>office@haven.com</td>
+                              <td>deloro@gmail.com</td>
+                              <td>deloro@gmail.com</td>
+                              <td>deloro@gmail.com</td>
+                            </tr>
+                            <tr>
+                              <th>Agent Phone</th>
+                              <td>323-592-2050</td>
+                              <td>323-592-2050</td>
+                              <td>323-445-2301</td>
+                              <td>323-445-2301</td>
+                              <td>323-445-2301</td>
+                            </tr>
+                            <tr>
+                              <th>Owner</th>
+                              <td>Frank Poole</td>
+                              <td>–</td>
+                              <td>–</td>
+                              <td>–</td>
+                              <td>–</td>
+                            </tr>
+                            <tr>
+                              <th>List Date</th>
+                              <td>1/16/2018</td>
+                              <td>10/11/2006</td>
+                              <td>5/18/2004</td>
+                              <td>2/17/1997</td>
+                              <td>3/24/1992</td>
+                            </tr>
+                            <tr>
+                              <th>Latest List Price</th>
+                              <td>$515,000</td>
+                              <td>$423,000</td>
+                              <td>$350,000</td>
+                              <td>$315,000</td>
+                              <td>$275,000</td>
+                            </tr>
+                            <tr>
+                              <th>Original List Price</th>
+                              <td>$515,000</td>
+                              <td>$430,000</td>
+                              <td>$350,000</td>
+                              <td>$315,000</td>
+                              <td>$275,000</td>
+                            </tr>
+                            <tr>
+                              <th>Listing Agreement</th>
+                              <td>3/16/2018</td>
+                              <td>12/11/2007</td>
+                              <td>7/18/2004</td>
+                              <td>4/17/1997</td>
+                              <td>5/24/1992</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- View More Button -->
+                  <div class="card-expand-cont">
+                    <button class="ps_view_more_btn minimal-btn" aria-label="View More Detail">View More Detail<i class="far fa-chevron-down accordian-icon"></i></button>
+                  </div>
+
+                  <div class="card-footer-default view-padding">
+                    <div>
+                      <strong>Source</strong> Listing/Public
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Property History -->
+                <div class="property-history card-base card-med section" id="propHist">
+                  <div class="card-header">
+                    <h4>Property History</h4>
+                    <div class="card-header-actions">
+                      <div class="card-action-btn-cont">
+                        <div class="card-action-btn" role="btn" aria-pressed="false" tabindex="0" id="openFullHist">
+                          <img src="images/icon-full-width.svg" />Full Width
+                        </div>
+                      </div>
+                      <button class="card-header-expand-btn"><i class="far fa-ellipsis-v"></i></button>
+                    </div>
+                  </div>
+                  <div class="tab-card" id="propHistoryTab">
+                    <!-- Code for tab buttons -->
+                    <input class="css-tab" type="radio" name="tabs" id="mortgageTab" class="section" checked="checked" />
+                    <label for="mortgageTab" id="mortgageContent">Mortgage Records</label>
+                    <input class="css-tab" type="radio" name="tabs" id="deedTab" />
+                    <label for="deedTab" id="deedContent" class="section">Deed Records</label>
+                    <input class="css-tab" type="radio" name="tabs" id="taxTab" />
+                    <label for="taxTab" id="taxContent">Tax Information</label>
+                    <input class="css-tab" type="radio" name="tabs" id="distressedTab" />
+                    <label for="distressedTab" id="distressedContent">Distressed Information</label>
+                    <input class="css-tab" type="radio" name="tabs" id="listingTab" />
+                    <label for="listingTab" class="last-tab" id="listingContent">Listing Records</label>
+
+                      <!-- Code for tab Contents -->
+
+                      <!-- Mortgage Contents -->
+                      <div class="tab mortgage-content">
+
+                        <div class="mortgage-expand">
+
+                          <div role="region" aria-labelledby="caption" tabindex="0">
+                            <table class="table-st-header-fix-col">
+                              <thead>
+                                <tr>
+                                  <th>Recording Date</th>
+                                  <th>3/16/2018</th>
+                                  <th>12/11/2014</th>
+                                  <th>7/18/2007</th>
+                                  <th>4/17/1997</th>
+                                  <th>5/24/1992</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th> Borrower(s) Name</th>
+                                  <td>David Corell</td>
+                                  <td>David Corell</td>
+                                  <td>David Corell</td>
+                                  <td>David Corell</td>
+                                  <td>Clementine Kruszynski</td>
+                                </tr>
+                                <tr>
+                                  <th>Loan Amount</th>
+                                  <td>$350,000</td>
+                                  <td>$256,765</td>
+                                  <td>$376,475</td>
+                                  <td>$174,532</td>
+                                  <td>$75,901</td>
+                                </tr>
+                                <tr>
+                                  <th>Due Date</th>
+                                  <td>4/1/2043</td>
+                                  <td>3/23/2044</td>
+                                  <td>12/15/2037</td>
+                                  <td>5/13/2027</td>
+                                  <td>12/11/2022</td>
+                                </tr>
+                                <tr>
+                                  <th>Loan Type</th>
+                                  <td>New Conventional</td>
+                                  <td>Credit Line (Revolving)</td>
+                                  <td>Unknown</td>
+                                  <td>Credit Line (Revolving)</td>
+                                  <td>Unknown</td>
+                                </tr>
+                                <tr>
+                                  <th>Interest Rate</th>
+                                  <td>4.75%</td>
+                                  <td>4.25%</td>
+                                  <td>4.2%</td>
+                                  <td>3.75%</td>
+                                  <td>4.25%</td>
+                                </tr>
+                                <tr>
+                                  <th>Lender(s)</th>
+                                  <td>Wells Fargo Bank NA</td>
+                                  <td>First Management</td>
+                                  <td>West Bank</td>
+                                  <td>Wells Fargo</td>
+                                  <td>Stanford Bank</td>
+                                </tr>
+                                <tr>
+                                  <th>Vesting Type</th>
+                                  <td>Sole Ownership</td>
+                                  <td>Sole Ownership</td>
+                                  <td>Sole Ownership</td>
+                                  <td>Sole Ownership</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Type of Financing</th>
+                                  <td>Fixed Rate</td>
+                                  <td>Variable</td>
+                                  <td>–</td>
+                                  <td>Fixed Rate</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Lender Type</th>
+                                  <td>Western Lendings Institution Inc</td>
+                                  <td>Countrywide Home Loans Inc</td>
+                                  <td>Countrywide Home Loans Inc</td>
+                                  <td>Great Western Home Loans</td>
+                                  <td>Israel Discount Bank</td>
+                                </tr>
+                                <tr>
+                                  <th>Loan Number</th>
+                                  <td>M#10001700042817342</td>
+                                  <td>M#10001005703118544</td>
+                                  <td>–</td>
+                                  <td>M#10001000498671224</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Document #</th>
+                                  <td>2004001004501</td>
+                                  <td>2003001456654</td>
+                                  <td>2003001456655</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Contract Date</th>
+                                  <td>3/02/2018</td>
+                                  <td>10/13/2014</td>
+                                  <td>3/22/2007</td>
+                                  <td>4/17/1997</td>
+                                  <td>5/24/1992</td>
+                                </tr>
+                                <tr>
+                                  <th>Fixed Step</th>
+                                  <td>F</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Adj. Rate Index</th>
+                                  <td>LIBOR1YR</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Rate Change Frequency</th>
+                                  <td>A</td>
+                                  <td>–</td>
+                                  <td>M</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Fixed to Adj Rate Rider<br />(First Change Date)</th>
+                                  <td>3/12/2018</td>
+                                  <td>12/10/2014</td>
+                                  <td>7/17/2007</td>
+                                  <td>4/16/1997</td>
+                                  <td>5/23/1992</td>
+                                </tr>
+                                <tr>
+                                  <th>Change Index</th>
+                                  <td>0225</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Max Interest Rate<br />(First Change Date)</th>
+                                  <td>1075</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Min Interest Rate<br />(First Change Date)</th>
+                                  <td>0225</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Max Interest Rate</th>
+                                  <td>1075</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Equity Credit Line</th>
+                                  <td>–</td>
+                                  <td>Yes</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                        </div>
+                      </div>
+                      <!-- Deed Contents -->
+                      <div class="tab deed-content">
+
+                        <div class="deed-expand">
+
+                          <div role="region" aria-labelledby="caption" tabindex="0">
+                            <table class="table-st-header-fix-col">
+                              <thead>
+                                <tr>
+                                  <th>Recording Date</th>
+                                  <th>4/6/2018</th>
+                                  <th>10/31/12</th>
+                                  <th>3/22/2001</th>
+                                  <th>4/17/1997</th>
+                                  <th>5/24/1992</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>Buyer's Name</th>
+                                  <td>Frank Poole</td>
+                                  <td>David Corell</td>
+                                  <td>Clementine Kruzynski</td>
+                                  <td>Joel Barish</td>
+                                  <td>Mary Suevo</td>
+                                </tr>
+                                <tr>
+                                  <th>Sale Price</th>
+                                  <td>$383,000</td>
+                                  <td>$290,000</td>
+                                  <td>$200,000</td>
+                                  <td>$0</td>
+                                  <td>$197,000</td>
+                                </tr>
+                                <tr>
+                                  <th>Sale Price Code</th>
+                                  <td>Sales Price or Transfer Tax rounded by County prior to computation. Varies by county.</td>
+                                  <td>Sales Price or Transfer Tax rounded by County prior to computation. Varies by county.</td>
+                                  <td>Sales Price or Transfer Tax rounded by County prior to computation. Varies by county.</td>
+                                  <td>Document states price as "0", "None", "No Consideration"</td>
+                                  <td>Sales Price or Transfer Tax rounded by County prior to computation. Varies by county.</td>
+                                </tr>
+                                <tr>
+                                  <th>Document Type</th>
+                                  <td>GD</td>
+                                  <td>IT</td>
+                                  <td>GD</td>
+                                  <td>GD</td>
+                                  <td>IT</td>
+                                </tr>
+                                <tr>
+                                  <th>Buyer ID</th>
+                                  <td>Single Man</td>
+                                  <td>Single Man</td>
+                                  <td>Single Woman</td>
+                                  <td>Single Man</td>
+                                  <td>Single Woman</td>
+                                </tr>
+                                <tr>
+                                  <th>Loan Type</th>
+                                  <td>New Conventional</td>
+                                  <td>Credit Line (Revolving)</td>
+                                  <td>Unknown</td>
+                                  <td>Credit Line (Revolving)</td>
+                                  <td>Unknown</td>
+                                </tr>
+
+                                <!-- Veiw Cutoff -->
+                                <tr>
+                                  <th>Seller Name</th>
+                                  <td>David Corell</td>
+                                  <td>Clementine Kruzynski</td>
+                                  <td>Joel Barish</td>
+                                  <td>Mary Suevo</td>
+                                  <td>Tom Wilkinson</td>
+                                </tr>
+                                <tr>
+                                  <th>Seller ID</th>
+                                  <td>Single Man</td>
+                                  <td>Single Woman</td>
+                                  <td>Single Man</td>
+                                  <td>Single Woman</td>
+                                  <td>Single Man</td>
+                                </tr>
+                                <tr>
+                                  <th>Document #</th>
+                                  <td>2004001004501</td>
+                                  <td>2003001456654</td>
+                                  <td>2003001456655</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>County Transfer Tax</th>
+                                  <td>$625</td>
+                                  <td>$564</td>
+                                  <td>$515</td>
+                                  <td>$473</td>
+                                  <td>$321</td>
+                                </tr>
+                                <tr>
+                                  <th>Contract Date</th>
+                                  <td>3/6/2018</td>
+                                  <td>9/31/12</td>
+                                  <td>2/22/2001</td>
+                                  <td>3/17/1997</td>
+                                  <td>4/24/1992</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Tax Contents -->
+                      <div class="tab tax-content">
+
+                        <div role="region" aria-labelledby="caption" tabindex="0">
+                          <table class="table-st-header-fix-col">
+                            <thead>
+                              <tr>
+                                <tr>
+                                  <th>Assessment Year</th>
+                                  <th>2021</th>
+                                  <th>2020</th>
+                                  <th>2019</th>
+                                  <th>2018</th>
+                                  <th>2017</th>
+                                </tr>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>Total Tax Amount</th>
+                                <td>$3,245</td>
+                                <td>$2,785</td>
+                                <td>$2,598</td>
+                                <td>$2,321</td>
+                                <td>$2,187</td>
+                              </tr>
+                              <tr>
+                                <th>Assessment Value</th>
+                                <td>Wells Fargo Bank NA</td>
+                                <td>First Management</td>
+                                <td>West Bank</td>
+                                <td>Wells Fargo</td>
+                                <td>Stanford Bank</td>
+                              </tr>
+                              <tr>
+                                <th>Assessment - Land</th>
+                                <td>4/1/2043</td>
+                                <td>3/23/2044</td>
+                                <td>12/15/2037</td>
+                                <td>5/13/2027</td>
+                                <td>12/11/2022</td>
+                              </tr>
+                              <tr>
+                                <th>Assessment Value - Improvements</th>
+                                <td>$350,000</td>
+                                <td>$256,765</td>
+                                <td>$376,475</td>
+                                <td>$174,532</td>
+                                <td>$75,901</td>
+                              </tr>
+                              <tr>
+                                <th>Tax Code</th>
+                                <td>4.75%</td>
+                                <td>4.25%</td>
+                                <td>4.2%</td>
+                                <td>3.75%</td>
+                                <td>4.25%</td>
+                              </tr>
+                              <tr>
+                                <th>Tax Exemption Code</th>
+                                <td>New Conventional</td>
+                                <td>Credit Line (Revolving)</td>
+                                <td>Unknown</td>
+                                <td>Credit Line (Revolving)</td>
+                                <td>Unknown</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- Distressed Contents -->
+                      <div class="tab distressed-content">
+
+                        <div role="region" aria-labelledby="caption" tabindex="0">
+                          <table class="table-st-header-fix-col">
+                            <thead>
+                              <tr>
+                                <th>Recording Date</th>
+                                <th>11/24/2017</th>
+                                <th>3/22/2016</th>
+                                <th>4/5/2015</th>
+                                <th>12/12/2014</th>
+                                <th>7/24/2014</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>Category</th>
+                                <td>Foreclosure</td>
+                                <td>Foreclosure</td>
+                                <td>Foreclosure</td>
+                                <td>Foreclosure</td>
+                                <td>Foreclosure</td>
+                              </tr>
+                              <tr>
+                                <th>Source</th>
+                                <td>Notice of Default</td>
+                                <td>Notice of Default</td>
+                                <td>Notice of Default</td>
+                                <td>Notice of Default</td>
+                                <td>Notice of Default</td>
+                              </tr>
+                              <tr>
+                                <th>Document Type</th>
+                                <td>Notice of Foreclosure Sale</td>
+                                <td>Notice of Foreclosure Sale</td>
+                                <td>Notice of Default</td>
+                                <td>Notice of Rescission</td>
+                                <td>–</td>
+                              </tr>
+                              <tr>
+                                <th>Trusted Borrower 1</th>
+                                <td>Clementine Kruczynski</td>
+                                <td>Clementine Kruczynski</td>
+                                <td>Clementine Kruczynski</td>
+                                <td>Clementine Kruczynski</td>
+                                <td>Clementine Kruczynski</td>
+                              </tr>
+                              <tr>
+                                <th>Auction Date</th>
+                                <td>11/30/2021</td>
+                                <td>4/3/2021</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                              </tr>
+                              <tr>
+                                <th>Past Due Amount</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>$301,220</td>
+                                <td>–</td>
+                                <td>–</td>
+                              </tr>
+                              <tr>
+                                <th>Payment Due Date</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>5/31/2015</td>
+                                <td>1/12/2015</td>
+                                <td>8/24/2014</td>
+                              </tr>
+                              <tr>
+                                <th>Trustee Sales #</th>
+                                <td>CA05001502-15-2</td>
+                                <td>CA05001502-15-2</td>
+                                <td>CA05001502-15-2</td>
+                                <td>CA05001502-15-1</td>
+                                <td>CA05001502-15-1</td>
+                              </tr>
+                              <tr>
+                                <th>Trustee Telephone #</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>323-252-8300</td>
+                                <td>–</td>
+                              </tr>
+                              <tr>
+                                <th>Attention to</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>MTC FINANCIAL INC</td>
+                              </tr>
+                              <tr>
+                                <th>Contract Date</th>
+                                <td>3/02/2018</td>
+                                <td>10/13/2014</td>
+                                <td>3/22/2007</td>
+                                <td>4/17/1997</td>
+                                <td>5/24/1992</td>
+                              </tr>
+                              <tr>
+                                <th> Original NOD Document #</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>2015000625472</td>
+                                <td>–</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                      </div>
+                      <!-- Listing Contents -->
+                      <div class="tab listing-content">
+
+                        <div role="region" aria-labelledby="caption" tabindex="0">
+                          <table class="table-st-header-fix-col">
+                            <thead>
+                              <tr>
+                                <th>Recording Date</th>
+                                <th>12/15/2021</th>
+                                <th>6/20/2016</th>
+                                <th>4/5/2015</th>
+                                <th>2/15/2001</th>
+                                <th>11/13/1997</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>Status</th>
+                                <td class="pin-status"><img src="images/pin/active-for-sale.svg" /><span class="status">Active/For Sale</span></td>
+                                <td class="pin-status"><img src="images/pin/closed-withdrwn-expr-cancel.svg" /><span class="status">Off Market/For Lease</span></td>
+                                <td class="pin-status"><img src="images/pin/active-for-lease.svg" /><span class="status">Active/For Lease</span></td>
+                                <td class="pin-status"><img src="images/pin/active-for-sale.svg" /><span class="status">Active/For Sale</span></td>
+                                <td class="pin-status"><img src="images/pin/closed-withdrwn-expr-cancel.svg" /><span class="status">Off Market/For Lease</span></td>
+                              </tr>
+                              <tr>
+                                <th>Sub Status</th>
+                                <td>New Active Listing</td>
+                                <td>Expired</td>
+                                <td>Temporarily On Hold</td>
+                                <td>Sold</td>
+                                <td>Temporarily On Hold</td>
+                              </tr>
+                              <tr>
+                                <th>MLS Name</th>
+                                <td>California Regional MLS (Matrix)</td>
+                                <td>California Regional MLS (Matrix)</td>
+                                <td>California Regional MLS (Matrix)</td>
+                                <td>California Regional MLS (Matrix)</td>
+                                <td>California Regional MLS (Matrix)</td>
+                              </tr>
+                              <tr>
+                                <th>Loan Amount</th>
+                                <td>$350,000</td>
+                                <td>$256,765</td>
+                                <td>$376,475</td>
+                                <td>$174,532</td>
+                                <td>$75,901</td>
+                              </tr>
+                              <tr>
+                                <th>Listing ID</th>
+                                <td><a>PW211914137</a></td>
+                                <td><a>PW190292384</a></td>
+                                <td><a>PW180265987</a></td>
+                                <td><a>PW165565682</a></td>
+                                <td><a>PW149852889</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- View More Button -->
+                  <div class="card-expand-cont">
+                    <button class="view_more_btn minimal-btn" aria-label="View More Detail">View More Detail<i class="far fa-chevron-down accordian-icon"></i></button>
+                  </div>
+
+                  <div class="compare-hist-rec">
+                    <div class="comp-hist-icon-label">
+                      <img class="comp-icon-cont" src="images/icon-compare.svg"/>
+                      <div class="comp-hist-descrip-cont">
+                        <div class="l4">Compare Historical Records</div>
+                        <p>Analyze listing records side by side</p>
+                      </div>
+                    </div>
+                    <button class="btn-40 btn-secondary btn-w-200">Compare Records</button>
+                  </div>
+
+                  <div class="card-footer-default">
+                    <div>
+                      <strong>Source</strong> Listing/Public
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Property History Full Width modal-->
+                <div class="prop-hist-modal">
+                  <div class="card-header">
+                    <h4>Public Record History</h4>
+                    <div class="card-header-actions">
+                      <div class="card-action-btn-cont">
+                        <div class="card-action-btn" role="btn" aria-pressed="false" tabindex="0" id="closeHistModal">
+                          <i class="fal fa-times"></i>Close
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-card" id="propHistoryTabFull">
+
+                    <input class="css-tab" type="radio" name="tabsfull" id="fullMortgageTab" class="section" checked/>
+                    <label for="fullMortgageTab" id="fullMortgageContent">Mortgage Records</label>
+                    <input class="css-tab" type="radio" name="tabsfull" id="fullDeedTab"/>
+                    <label for="fullDeedTab" id="fullDeedContent" class="section">Deed Records</label>
+                    <input class="css-tab" type="radio" name="tabsfull" id="fullTaxTab" />
+                    <label for="fullTaxTab" id="fullTaxTab">Tax Information</label>
+                    <input class="css-tab" type="radio" name="tabsfull" id="fullDistressedTab" />
+                    <label for="fullDistressedTab" id="fullDistressedContent">Distressed Information</label>
+                    <input class="css-tab" type="radio" name="tabsfull" id="fullListingTab" />
+                    <label for="fullListingTab" class="last-tab" id="fullListingContent">Listing Records</label>
+
+
+                      <div class="tab mortgage-content-f">
+
+                        <div class="mortgage-expand">
+
+                          <div class="full">
+                            <table class="full-prop-hist">
+                              <thead>
+                                <tr>
+                                  <th>Recording Date</th>
+                                  <th>3/16/2018</th>
+                                  <th>12/11/2014</th>
+                                  <th>7/18/2007</th>
+                                  <th>4/17/1997</th>
+                                  <th>5/24/1992</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th> Borrower(s) Name</th>
+                                  <td>David Corell</td>
+                                  <td>David Corell</td>
+                                  <td>David Corell</td>
+                                  <td>David Corell</td>
+                                  <td>Clementine Kruszynski</td>
+                                </tr>
+                                <tr>
+                                  <th>Loan Amount</th>
+                                  <td>$350,000</td>
+                                  <td>$256,765</td>
+                                  <td>$376,475</td>
+                                  <td>$174,532</td>
+                                  <td>$75,901</td>
+                                </tr>
+                                <tr>
+                                  <th>Due Date</th>
+                                  <td>4/1/2043</td>
+                                  <td>3/23/2044</td>
+                                  <td>12/15/2037</td>
+                                  <td>5/13/2027</td>
+                                  <td>12/11/2022</td>
+                                </tr>
+                                <tr>
+                                  <th>Loan Type</th>
+                                  <td>New Conventional</td>
+                                  <td>Credit Line (Revolving)</td>
+                                  <td>Unknown</td>
+                                  <td>Credit Line (Revolving)</td>
+                                  <td>Unknown</td>
+                                </tr>
+                                <tr>
+                                  <th>Interest Rate</th>
+                                  <td>4.75%</td>
+                                  <td>4.25%</td>
+                                  <td>4.2%</td>
+                                  <td>3.75%</td>
+                                  <td>4.25%</td>
+                                </tr>
+                                <tr>
+                                  <th>Lender(s)</th>
+                                  <td>Wells Fargo Bank NA</td>
+                                  <td>First Management</td>
+                                  <td>West Bank</td>
+                                  <td>Wells Fargo</td>
+                                  <td>Stanford Bank</td>
+                                </tr>
+                                <tr>
+                                  <th>Vesting Type</th>
+                                  <td>Sole Ownership</td>
+                                  <td>Sole Ownership</td>
+                                  <td>Sole Ownership</td>
+                                  <td>Sole Ownership</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Type of Financing</th>
+                                  <td>Fixed Rate</td>
+                                  <td>Variable</td>
+                                  <td>–</td>
+                                  <td>Fixed Rate</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Lender Type</th>
+                                  <td>Western Lendings Institution Inc</td>
+                                  <td>Countrywide Home Loans Inc</td>
+                                  <td>Countrywide Home Loans Inc</td>
+                                  <td>Great Western Home Loans</td>
+                                  <td>Israel Discount Bank</td>
+                                </tr>
+                                <tr>
+                                  <th>Loan Number</th>
+                                  <td>M#10001700042817342</td>
+                                  <td>M#10001005703118544</td>
+                                  <td>–</td>
+                                  <td>M#10001000498671224</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Document #</th>
+                                  <td>2004001004501</td>
+                                  <td>2003001456654</td>
+                                  <td>2003001456655</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Contract Date</th>
+                                  <td>3/02/2018</td>
+                                  <td>10/13/2014</td>
+                                  <td>3/22/2007</td>
+                                  <td>4/17/1997</td>
+                                  <td>5/24/1992</td>
+                                </tr>
+                                <tr>
+                                  <th>Fixed Step</th>
+                                  <td>F</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Adj. Rate Index</th>
+                                  <td>LIBOR1YR</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Rate Change Frequency</th>
+                                  <td>A</td>
+                                  <td>–</td>
+                                  <td>M</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Fixed to Adj Rate Rider<br />(First Change Date)</th>
+                                  <td>3/12/2018</td>
+                                  <td>12/10/2014</td>
+                                  <td>7/17/2007</td>
+                                  <td>4/16/1997</td>
+                                  <td>5/23/1992</td>
+                                </tr>
+                                <tr>
+                                  <th>Change Index</th>
+                                  <td>0225</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Max Interest Rate<br />(First Change Date)</th>
+                                  <td>1075</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Min Interest Rate<br />(First Change Date)</th>
+                                  <td>0225</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Max Interest Rate</th>
+                                  <td>1075</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>Equity Credit Line</th>
+                                  <td>–</td>
+                                  <td>Yes</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="tab deed-content-f">
+
+                        <div class="deed-expand">
+
+                          <div class="full">
+                            <table class="full-prop-hist">
+                              <thead>
+                                <tr>
+                                  <th>Recording Date</th>
+                                  <th>4/6/2018</th>
+                                  <th>10/31/12</th>
+                                  <th>3/22/2001</th>
+                                  <th>4/17/1997</th>
+                                  <th>5/24/1992</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>Buyer's Name</th>
+                                  <td>Frank Poole</td>
+                                  <td>David Corell</td>
+                                  <td>Clementine Kruzynski</td>
+                                  <td>Joel Barish</td>
+                                  <td>Mary Suevo</td>
+                                </tr>
+                                <tr>
+                                  <th>Sale Price</th>
+                                  <td>$383,000</td>
+                                  <td>$290,000</td>
+                                  <td>$200,000</td>
+                                  <td>$0</td>
+                                  <td>$197,000</td>
+                                </tr>
+                                <tr>
+                                  <th>Sale Price Code</th>
+                                  <td>Sales Price or Transfer Tax rounded by County prior to computation. Varies by county.</td>
+                                  <td>Sales Price or Transfer Tax rounded by County prior to computation. Varies by county.</td>
+                                  <td>Sales Price or Transfer Tax rounded by County prior to computation. Varies by county.</td>
+                                  <td>Document states price as "0", "None", "No Consideration"</td>
+                                  <td>Sales Price or Transfer Tax rounded by County prior to computation. Varies by county.</td>
+                                </tr>
+                                <tr>
+                                  <th>Document Type</th>
+                                  <td>GD</td>
+                                  <td>IT</td>
+                                  <td>GD</td>
+                                  <td>GD</td>
+                                  <td>IT</td>
+                                </tr>
+                                <tr>
+                                  <th>Buyer ID</th>
+                                  <td>Single Man</td>
+                                  <td>Single Man</td>
+                                  <td>Single Woman</td>
+                                  <td>Single Man</td>
+                                  <td>Single Woman</td>
+                                </tr>
+                                <tr>
+                                  <th>Loan Type</th>
+                                  <td>New Conventional</td>
+                                  <td>Credit Line (Revolving)</td>
+                                  <td>Unknown</td>
+                                  <td>Credit Line (Revolving)</td>
+                                  <td>Unknown</td>
+                                </tr>
+
+                                <tr>
+                                  <th>Seller Name</th>
+                                  <td>David Corell</td>
+                                  <td>Clementine Kruzynski</td>
+                                  <td>Joel Barish</td>
+                                  <td>Mary Suevo</td>
+                                  <td>Tom Wilkinson</td>
+                                </tr>
+                                <tr>
+                                  <th>Seller ID</th>
+                                  <td>Single Man</td>
+                                  <td>Single Woman</td>
+                                  <td>Single Man</td>
+                                  <td>Single Woman</td>
+                                  <td>Single Man</td>
+                                </tr>
+                                <tr>
+                                  <th>Document #</th>
+                                  <td>2004001004501</td>
+                                  <td>2003001456654</td>
+                                  <td>2003001456655</td>
+                                  <td>–</td>
+                                  <td>–</td>
+                                </tr>
+                                <tr>
+                                  <th>County Transfer Tax</th>
+                                  <td>$625</td>
+                                  <td>$564</td>
+                                  <td>$515</td>
+                                  <td>$473</td>
+                                  <td>$321</td>
+                                </tr>
+                                <tr>
+                                  <th>Contract Date</th>
+                                  <td>3/6/2018</td>
+                                  <td>9/31/12</td>
+                                  <td>2/22/2001</td>
+                                  <td>3/17/1997</td>
+                                  <td>4/24/1992</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab tax-content-f">
+
+                        <div class="full">
+                          <table class="full-prop-hist">
+                            <thead>
+                              <tr>
+                                <tr>
+                                  <th>Assessment Year</th>
+                                  <th>2021</th>
+                                  <th>2020</th>
+                                  <th>2019</th>
+                                  <th>2018</th>
+                                  <th>2017</th>
+                                </tr>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>Total Tax Amount</th>
+                                <td>$3,245</td>
+                                <td>$2,785</td>
+                                <td>$2,598</td>
+                                <td>$2,321</td>
+                                <td>$2,187</td>
+                              </tr>
+                              <tr>
+                                <th>Assessment Value</th>
+                                <td>Wells Fargo Bank NA</td>
+                                <td>First Management</td>
+                                <td>West Bank</td>
+                                <td>Wells Fargo</td>
+                                <td>Stanford Bank</td>
+                              </tr>
+                              <tr>
+                                <th>Assessment - Land</th>
+                                <td>4/1/2043</td>
+                                <td>3/23/2044</td>
+                                <td>12/15/2037</td>
+                                <td>5/13/2027</td>
+                                <td>12/11/2022</td>
+                              </tr>
+                              <tr>
+                                <th>Assessment Value - Improvements</th>
+                                <td>$350,000</td>
+                                <td>$256,765</td>
+                                <td>$376,475</td>
+                                <td>$174,532</td>
+                                <td>$75,901</td>
+                              </tr>
+                              <tr>
+                                <th>Tax Code</th>
+                                <td>4.75%</td>
+                                <td>4.25%</td>
+                                <td>4.2%</td>
+                                <td>3.75%</td>
+                                <td>4.25%</td>
+                              </tr>
+                              <tr>
+                                <th>Tax Exemption Code</th>
+                                <td>New Conventional</td>
+                                <td>Credit Line (Revolving)</td>
+                                <td>Unknown</td>
+                                <td>Credit Line (Revolving)</td>
+                                <td>Unknown</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="tab distressed-content-f">
+
+                        <div class="full">
+                          <table class="full-prop-hist">
+                            <thead>
+                              <tr>
+                                <th>Recording Date</th>
+                                <th>11/24/2017</th>
+                                <th>3/22/2016</th>
+                                <th>4/5/2015</th>
+                                <th>12/12/2014</th>
+                                <th>7/24/2014</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>Category</th>
+                                <td>Foreclosure</td>
+                                <td>Foreclosure</td>
+                                <td>Foreclosure</td>
+                                <td>Foreclosure</td>
+                                <td>Foreclosure</td>
+                              </tr>
+                              <tr>
+                                <th>Source</th>
+                                <td>Notice of Default</td>
+                                <td>Notice of Default</td>
+                                <td>Notice of Default</td>
+                                <td>Notice of Default</td>
+                                <td>Notice of Default</td>
+                              </tr>
+                              <tr>
+                                <th>Document Type</th>
+                                <td>Notice of Foreclosure Sale</td>
+                                <td>Notice of Foreclosure Sale</td>
+                                <td>Notice of Default</td>
+                                <td>Notice of Rescission</td>
+                                <td>–</td>
+                              </tr>
+                              <tr>
+                                <th>Trusted Borrower 1</th>
+                                <td>Clementine Kruczynski</td>
+                                <td>Clementine Kruczynski</td>
+                                <td>Clementine Kruczynski</td>
+                                <td>Clementine Kruczynski</td>
+                                <td>Clementine Kruczynski</td>
+                              </tr>
+                              <tr>
+                                <th>Auction Date</th>
+                                <td>11/30/2021</td>
+                                <td>4/3/2021</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                              </tr>
+                              <tr>
+                                <th>Past Due Amount</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>$301,220</td>
+                                <td>–</td>
+                                <td>–</td>
+                              </tr>
+                              <tr>
+                                <th>Payment Due Date</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>5/31/2015</td>
+                                <td>1/12/2015</td>
+                                <td>8/24/2014</td>
+                              </tr>
+                              <tr>
+                                <th>Trustee Sales #</th>
+                                <td>CA05001502-15-2</td>
+                                <td>CA05001502-15-2</td>
+                                <td>CA05001502-15-2</td>
+                                <td>CA05001502-15-1</td>
+                                <td>CA05001502-15-1</td>
+                              </tr>
+                              <tr>
+                                <th>Trustee Telephone #</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>323-252-8300</td>
+                                <td>–</td>
+                              </tr>
+                              <tr>
+                                <th>Attention to</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>MTC FINANCIAL INC</td>
+                              </tr>
+                              <tr>
+                                <th>Contract Date</th>
+                                <td>3/02/2018</td>
+                                <td>10/13/2014</td>
+                                <td>3/22/2007</td>
+                                <td>4/17/1997</td>
+                                <td>5/24/1992</td>
+                              </tr>
+                              <tr>
+                                <th> Original NOD Document #</th>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td>2015000625472</td>
+                                <td>–</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                      </div>
+
+                      <div class="tab listing-content-f">
+
+                        <div class="full">
+                          <table class="full-prop-hist">
+                            <thead>
+                              <tr>
+                                <th>Recording Date</th>
+                                <th>12/15/2021</th>
+                                <th>6/20/2016</th>
+                                <th>4/5/2015</th>
+                                <th>2/15/2001</th>
+                                <th>11/13/1997</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>Status</th>
+                                <td class="pin-status"><img src="images/pin/active-for-sale.svg" /><span class="status">Active/For Sale</span></td>
+                                <td class="pin-status"><img src="images/pin/closed-withdrwn-expr-cancel.svg" /><span class="status">Off Market/For Lease</span></td>
+                                <td class="pin-status"><img src="images/pin/active-for-lease.svg" /><span class="status">Active/For Lease</span></td>
+                                <td class="pin-status"><img src="images/pin/active-for-sale.svg" /><span class="status">Active/For Sale</span></td>
+                                <td class="pin-status"><img src="images/pin/closed-withdrwn-expr-cancel.svg" /><span class="status">Off Market/For Lease</span></td>
+                              </tr>
+                              <tr>
+                                <th>Sub Status</th>
+                                <td>New Active Listing</td>
+                                <td>Expired</td>
+                                <td>Temporarily On Hold</td>
+                                <td>Sold</td>
+                                <td>Temporarily On Hold</td>
+                              </tr>
+                              <tr>
+                                <th>MLS Name</th>
+                                <td>California Regional MLS (Matrix)</td>
+                                <td>California Regional MLS (Matrix)</td>
+                                <td>California Regional MLS (Matrix)</td>
+                                <td>California Regional MLS (Matrix)</td>
+                                <td>California Regional MLS (Matrix)</td>
+                              </tr>
+                              <tr>
+                                <th>Loan Amount</th>
+                                <td>$350,000</td>
+                                <td>$256,765</td>
+                                <td>$376,475</td>
+                                <td>$174,532</td>
+                                <td>$75,901</td>
+                              </tr>
+                              <tr>
+                                <th>Listing ID</th>
+                                <td><a>PW211914137</a></td>
+                                <td><a>PW190292384</a></td>
+                                <td><a>PW180265987</a></td>
+                                <td><a>PW165565682</a></td>
+                                <td><a>PW149852889</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+              <!-- Column 2 -->
+            <div class="col2">
+              <!-- Nearby Market Activity Card -->
+              <div class="nearbyMarketActivity card-base card-sm section" id="nearbyMarket">
+                <div class="card-header-line">
+                  <h4>Nearby Market Activity</h4><button class="card-header-expand-btn" ><i class="far fa-ellipsis-v"></i></button>
+                </div>
+                <a href="map-location.html#subnav" class="map-thumb-cont">
+                  <svg class="shadow-svg shadow-svg-hover" width="87px" height="77px" viewBox="0 0 87 77"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                      <title>thumb-market-activity</title>
+                      <defs>
+                          <linearGradient x1="1.70372368e-06%" y1="50.0063476%" x2="100%" y2="50.0063476%" id="linearGradient-1">
+                              <stop stop-color="#D0E7F8" offset="0%"></stop>
+                              <stop stop-color="#E9F4FC" offset="84%"></stop>
+                              <stop stop-color="#EEF7FD" offset="100%"></stop>
+                          </linearGradient>
+                          <radialGradient cx="49.0142251%" cy="28.9023968%" fx="49.0142251%" fy="28.9023968%" r="105.301412%" gradientTransform="translate(0.490142,0.289024),scale(0.552800,1.000000),translate(-0.490142,-0.289024)" id="radialGradient-2">
+                              <stop stop-color="#BEF4D1" offset="3%"></stop>
+                              <stop stop-color="#D6FFE5" offset="100%"></stop>
+                          </radialGradient>
+                          <radialGradient cx="-154.955527%" cy="-109.600515%" fx="-154.955527%" fy="-109.600515%" r="387.371134%" gradientTransform="translate(-1.549555,-1.096005),scale(0.986023,1.000000),translate(1.549555,1.096005)" id="radialGradient-3">
+                              <stop stop-color="#D0E7F8" offset="10%"></stop>
+                              <stop stop-color="#EEF7FD" offset="92%"></stop>
+                          </radialGradient>
+                      </defs>
+                      <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="thumb-market-activity" transform="translate(-0.000405, -0.000000)">
+                              <path d="M65.4504084,38.2500079 C58.4504084,43.9600079 58.0804084,43.9600079 57.4504084,43.9600079 C52.0004084,44 50.0004084,37.6400079 48.2804084,32.0700079 C47.9604084,31.0700079 47.6504084,30.0700079 47.2804084,29.0700079 C46.1404084,25.8200079 40.2804084,22.1300079 35.1404084,18.8700079 C32.1871786,17.1126993 29.3602995,15.1512596 26.6804084,13 C22.7604084,9.61000789 17.3804054,6.16 6.50040545,9.09494702e-13 L3.50040545,9.09494702e-13 C2.50040545,9.09494702e-13 -0.00126083588,2.25255841 4.76778951e-07,5 L4.76778951e-07,37.5200079 L19.3304084,37.5200079 C20.9821547,31.4487922 26.4590046,27.2085186 32.7504084,27.1300079 C40.6337105,27.2831738 46.9009784,33.7966558 46.7504084,41.6800079 C46.8953857,49.559487 40.6297321,56.0668158 32.7504084,56.2200079 C26.4590046,56.1414971 20.9821547,51.9012236 19.3304084,45.8300079 L4.76778951e-07,45.8300079 L4.76778951e-07,69 C4.76778951e-07,73.4182859 3.58213041,77 8.00040841,77 L79.0004084,77 C83.4186864,77 87.0000005,73.4182859 87.0000005,69 L87.0000005,38.2500079 L65.4504084,38.2500079 Z M76.2604084,68.7300079 L61.7804084,58.5800079 L69.8504084,46.1500079 L84.3404084,56.3000079 L76.2604084,68.7300079 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                              <path d="M87.0004054,5 L87.0004054,35.7500079 L64.5504084,35.7500079 L64.2104084,36.0300079 C62.4804084,37.4400079 61.2104084,38.5 60.2104084,39.2800079 C58.3604084,40.7300079 57.6004084,41.2800079 57.2904084,41.4600079 L57.2204084,41.4600079 C56.5560925,41.4000648 55.920335,41.1616557 55.3804084,40.7700079 C54.0339824,39.6147144 53.0279246,38.1142708 52.4704084,36.4300079 C52.4355079,36.3740164 52.4085821,36.3134335 52.3904084,36.2500079 C51.7704084,34.7300079 51.2404084,33.0200079 50.7104084,31.3300079 C50.3804084,30.3300079 50.0604084,29.2500079 49.7104084,28.3300079 C48.2804084,24.2600079 42.3204084,20.4900079 36.5504084,16.8400079 L35.2404084,16 C32.8229081,14.5438573 30.5105628,12.9198692 28.3204084,11.1400079 L27.5704084,10.5100079 L27.5204084,10.5100079 C24.8870751,8.35000789 19.7137408,4.84667193 12.0004054,0 L76.0004054,0 C79.3337388,0 81.3337388,0 82.0004054,0 C83.0004054,0 85.0004054,1.5 85.5004054,2 C86.0004054,2.5 86.9818183,4.26018789 87.0004054,5 Z" id="Path" fill="url(#radialGradient-2)"></path>
+                              <path d="M87.0004054,35.7500079 L87.0004054,38.2500079 L65.4504084,38.2500079 C58.4504084,43.9603814 58.0804084,43.9603814 57.4504084,43.9603814 C52.0004054,44 50.0004054,37.6400079 48.2804084,32.0700079 C47.9604084,31.0700079 47.6504084,30.0700079 47.2804084,29.0700079 C46.1404084,25.8200079 40.2804084,22.1300079 35.1404084,18.8700079 C32.1871786,17.1126993 29.3602995,15.1512596 26.6804084,13 C24.0670751,10.7400053 17.3404074,6.40667193 6.50040545,1.36424205e-12 C8.00040545,1.36424205e-12 9.00040545,1.36424205e-12 10.0004054,1.36424205e-12 L12.0004054,1.36424205e-12 C21.3604054,5.37 23.5704084,7.21000789 27.5204084,10.4900079 L27.5704084,10.4900079 L28.3204084,11.1200079 C30.5099315,12.906743 32.8222923,14.5374252 35.2404084,16 L36.5204084,16.8100079 C42.2904084,20.4600079 48.2504084,24.2300079 49.6804084,28.3000079 C50.0204084,29.3000079 50.3404084,30.3000079 50.6804084,31.3000079 C51.2104084,32.9900079 51.7404084,34.7000079 52.3604084,36.2200079 C52.3785821,36.2834335 52.4055079,36.3440164 52.4404084,36.4000079 C52.9979246,38.0842708 54.0039824,39.5847144 55.3504084,40.7400079 C55.890335,41.1316557 56.5260925,41.3700648 57.1904084,41.4300079 L57.2604084,41.4300079 C57.5704084,41.2400079 58.3304084,40.7000079 60.1804084,39.2500079 C61.1804084,38.4700079 62.4904084,37.4100079 64.1804084,36 L64.5204084,35.7200079 L87.0004054,35.7500079 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                              <path d="M69.8504084,46.1500079 L61.7804084,58.5800079 L76.2604084,68.7300079 L84.3404084,56.3000079 L69.8504084,46.1500079 Z M75.5804084,65.2000079 L65.1904084,57.9200079 L70.5404084,49.6800079 L80.9304084,57.0000079 L75.5804084,65.2000079 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                              <polygon id="Path" fill="url(#radialGradient-3)" fill-rule="nonzero" points="80.9304084 56.9600079 75.5804084 65.2000079 65.1904084 57.9200079 70.5404084 49.6800079"></polygon>
+                              <path d="M32.7504084,27.1300079 C26.4590046,27.2085186 20.9821547,31.4487922 19.3304084,37.5200079 L0.000408407723,37.5200079 L0.000408407723,45.8300079 L19.3304084,45.8300079 C20.9821547,51.9012236 26.4590046,56.1414971 32.7504084,56.2200079 C40.6297321,56.0668158 46.8953857,49.559487 46.7504084,41.6800079 C46.9009784,33.7966558 40.6337105,27.2831738 32.7504084,27.1300079 L32.7504084,27.1300079 Z M32.7504084,53.3100079 C28.0380953,53.2631601 23.8582216,50.2741109 22.2904084,45.8300079 C21.3006849,43.1484152 21.3006849,40.2016006 22.2904084,37.5200079 C23.8447775,33.0601336 28.0277243,30.0528908 32.7504084,30.0000079 C39.0434577,30.1845199 44.0492706,35.3392542 44.0492706,41.6350079 C44.0492706,47.9307615 39.0434577,53.0854959 32.7504084,53.2700079 L32.7504084,53.3100079 Z" id="Shape" fill="#FFFFFF"></path>
+                              <path d="M32.7504084,30.0000079 C28.0380953,30.0468557 23.8582216,33.0359049 22.2904084,37.4800079 C21.3006849,40.1616006 21.3006849,43.1084152 22.2904084,45.7900079 C23.8582216,50.2341109 28.0380953,53.2231601 32.7504084,53.2700079 C39.0434577,53.0854959 44.0492706,47.9307615 44.0492706,41.6350079 C44.0492706,35.3392542 39.0434577,30.1845199 32.7504084,30.0000079 L32.7504084,30.0000079 Z M35.4904084,46.8100079 C34.881161,47.4032649 34.0791978,47.7581159 33.2304084,47.8100079 L33.2304084,49.3300079 L32.0004084,49.3300079 L32.0004084,47.8300079 C31.0965929,47.7690474 30.2479836,47.3732674 29.6204084,46.7200079 C29.3899184,46.457077 29.2071676,46.1558766 29.0804084,45.8300079 C28.8791789,45.3210162 28.7806206,44.7772465 28.7904084,44.2300079 L30.6904084,44.2300079 C30.6649803,44.6779341 30.7728547,45.1233507 31.0004084,45.5100079 C31.0477911,45.6017376 31.1084437,45.6859773 31.1804084,45.7600079 C31.5454659,46.136361 32.057177,46.3337353 32.5804084,46.3000079 C33.0678028,46.3262097 33.5479551,46.1732724 33.9304084,45.8700079 C34.244341,45.5757038 34.4157079,45.160048 34.4004084,44.7300079 C34.415024,44.3216146 34.2634884,43.9247356 33.9804084,43.6300079 C33.5747799,43.2676569 33.092909,43.00109 32.5704084,42.8500079 C32.029762,42.6777826 31.5045741,42.4603481 31.0004084,42.2000079 L31.0004084,42.2000079 C29.8940863,41.676875 29.197398,40.553563 29.2204084,39.3300079 C29.1992777,38.6932626 29.3814053,38.0663232 29.7404084,37.5400079 C29.8217254,37.4200425 29.9119818,37.3063863 30.0104084,37.2000079 C30.5764789,36.6148282 31.3383654,36.2588065 32.1504084,36.2000079 L32.1504084,34.4800079 L33.4004084,34.4800079 L33.4004084,36.2000079 C34.2248182,36.2909461 34.9797635,36.7043685 35.5004084,37.3500079 C36.0172155,38.0745712 36.2776198,38.9507965 36.2404084,39.8400079 L34.3504084,39.8400079 C34.3788184,39.2889414 34.2241134,38.7439579 33.9104084,38.2900079 C33.6272601,37.9168386 33.1782903,37.7073194 32.7104084,37.7300079 C32.2827133,37.7022957 31.861621,37.8462589 31.5404084,38.1300079 C31.2433004,38.4443274 31.0910367,38.8684905 31.1204084,39.3000079 C31.1038426,39.705757 31.255862,40.1002837 31.5404084,40.3900079 C31.953498,40.7393893 32.4331711,41.0013385 32.9504084,41.1600079 C33.4889505,41.3498064 34.0135631,41.5770271 34.5204084,41.8400079 C34.8889298,42.026916 35.2262649,42.2697973 35.5204084,42.5600079 C35.7819562,42.8238266 35.9892036,43.1363965 36.1304084,43.4800079 C36.2779915,43.8729225 36.3492654,44.290384 36.3404084,44.7100079 C36.3621671,45.5096575 36.0549113,46.2832191 35.4904084,46.8500079 L35.4904084,46.8100079 Z" id="Shape" fill="#0070C1"></path>
+                              <path d="M36.3004084,44.7100079 C36.3327805,45.5038307 36.0402941,46.2765724 35.4904084,46.8500079 C34.881161,47.4432649 34.0791978,47.7981159 33.2304084,47.8500079 L33.2304084,49.3700079 L32.0004084,49.3700079 L32.0004084,47.8300079 C31.0965929,47.7690474 30.2479836,47.3732674 29.6204084,46.7200079 C29.3899184,46.457077 29.2071676,46.1558766 29.0804084,45.8300079 C28.8791789,45.3210162 28.7806206,44.7772465 28.7904084,44.2300079 L30.6904084,44.2300079 C30.6649803,44.6779341 30.7728547,45.1233507 31.0004084,45.5100079 C31.0477911,45.6017376 31.1084437,45.6859773 31.1804084,45.7600079 C31.5454659,46.136361 32.057177,46.3337353 32.5804084,46.3000079 C33.0678028,46.3262097 33.5479551,46.1732724 33.9304084,45.8700079 C34.244341,45.5757038 34.4157079,45.160048 34.4004084,44.7300079 C34.415024,44.3216146 34.2634884,43.9247356 33.9804084,43.6300079 C33.5747799,43.2676569 33.092909,43.00109 32.5704084,42.8500079 C32.029762,42.6777826 31.5045741,42.4603481 31.0004084,42.2000079 L31.0004084,42.2000079 C29.8940863,41.676875 29.197398,40.553563 29.2204084,39.3300079 C29.1992777,38.6932626 29.3814053,38.0663232 29.7404084,37.5400079 C29.8217254,37.4200425 29.9119818,37.3063863 30.0104084,37.2000079 C30.5764789,36.6148282 31.3383654,36.2588065 32.1504084,36.2000079 L32.1504084,34.4800079 L33.4004084,34.4800079 L33.4004084,36.2000079 C34.2248182,36.2909461 34.9797635,36.7043685 35.5004084,37.3500079 C36.0172155,38.0745712 36.2776198,38.9507965 36.2404084,39.8400079 L34.3504084,39.8400079 C34.3788184,39.2889414 34.2241134,38.7439579 33.9104084,38.2900079 C33.6272601,37.9168386 33.1782903,37.7073194 32.7104084,37.7300079 C32.2827133,37.7022957 31.861621,37.8462589 31.5404084,38.1300079 C31.2433004,38.4443274 31.0910367,38.8684905 31.1204084,39.3000079 C31.1038426,39.705757 31.255862,40.1002837 31.5404084,40.3900079 C31.953498,40.7393893 32.4331711,41.0013385 32.9504084,41.1600079 C33.4889505,41.3498064 34.0135631,41.5770271 34.5204084,41.8400079 C34.8889298,42.026916 35.2262649,42.2697973 35.5204084,42.5600079 C35.7819562,42.8238266 35.9892036,43.1363965 36.1304084,43.4800079 C36.2643949,43.8755572 36.3220826,44.2929445 36.3004084,44.7100079 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                          </g>
+                      </g>
+                  </svg>
+                  <div class="map-thumb-descrip">
+                    <label class="l5">View Map</label>
+                    <p>Explore nearby recent market activity on the map
+                    </p>
+                  </div>
+                  <i class="fal fa-arrow-right"></i>
+                </a>
+                <hr/>
+                <div class="nearby-market-scroll-cont">
+                  <img class="imgCard shadow-tiny" src="images/nearby-prop-card1.jpg"/>
+                  <img class="imgCard shadow-tiny" src="images/nearby-prop-card2.jpg"/>
+                </div>
+                <div class="card-footer-none"></div>
+              </div>
+
+              <div class="additionalInformation card-collapse card-sm">
+                <div class="card-header">
+                  <h4>Additional Information</h4>
+                  <button class="card-header-expand-btn"><i class="far fa-ellipsis-v"></i></button>
+                </div>
+              </div>
+
+              <div class="brokerServices card card-sm">
+                <img class="img-card-scale" src="images/broker-services.png"/>
+              </div>
+
+              <!-- Additional Resource Card -->
+
+              <div class="additionalResources card-base card-sm section" id="additionalRes">
+                <div class="card-header-line">
+                  <h4>Additional Resources</h4><button class="card-header-expand-btn" ><i class="far fa-ellipsis-v"></i></button>
+                </div>
+                <div class="add-res-wrapper">
+                  <a href="#" class="map-thumb-cont">
+                    <div class="add-resource-thumb-cont shadow-tiny">
+                      <img src="images/add-resources-valuate.svg"/>
+                    </div>
+                    <div class="map-thumb-descrip">
+                      <label class="l5">Valuate</label>
+                      <p>Analyze Property Investment Potential
+                      </p>
+                    </div>
+                    <i class="fal fa-arrow-right"></i>
+                  </a>
+
+                  <a href="#" class="map-thumb-cont">
+                    <div class="add-resource-thumb-cont shadow-tiny">
+                      <img src="images/add-resources-trans-zipform.svg"/>
+                    </div>
+                    <div class="map-thumb-descrip">
+                      <label class="l5">Transactions zipForm Edition</label>
+                      <p>Transaction Management
+                      </p>
+                    </div>
+                    <i class="fal fa-arrow-right"></i>
+                  </a>
+
+                  <a href="#" class="map-thumb-cont">
+                    <div class="add-resource-thumb-cont shadow-tiny">
+                      <img src="images/add-resources-showingtime.svg"/>
+                    </div>
+                    <div class="map-thumb-descrip">
+                      <label class="l5">ShowingTime</label>
+                      <p>Manage Showings & Feedback
+                      </p>
+                    </div>
+                    <i class="fal fa-arrow-right"></i>
+                  </a>
+
+                  <a href="#" class="map-thumb-cont">
+                    <div class="add-resource-thumb-cont shadow-tiny">
+                      <img src="images/add-resources-downpayment.svg"/>
+                    </div>
+                    <div class="map-thumb-descrip">
+                      <label class="l5">Downpayment Resouce</label>
+                      <p>Homebuyer Down Payment Help
+                      </p>
+                    </div>
+                    <i class="fal fa-arrow-right"></i>
+                  </a>
+                </div>
+
+                <div class="card-footer-none"></div>
+              </div>
+
+
+              <div class="listingAgent card card-sm section">
+                <img class="img-card-scale" src="images/listing-agent.png"/>
+              </div>
+              <div class="multipleListings card card-sm section" id="multipleList">
+                <img class="img-card-scale" src="images/multiple-listings.png"/>
+              </div>
+              <div class="homeowners card card-sm section" id="homeowners">
+                <img class="img-card-scale" src="images/homeowners.png"/>
+              </div>
+              <div class="financing card card-sm section" id="financing">
+                <img class="img-card-scale" src="images/financing-terms.png"/>
+              </div>
+              <div class="miscellaneousDetails card-sm card section">
+                <img class="img-card-scale" src="images/misc-details.png"/>
+              </div>
+            </div>
+
+
+        </div>
+        <footer class="card-container-1col buffer">
+          <div class="footer card">
+            <img class="img-card-scale" src="images/footer.png"/>
+          </div>
+        </footer>
+        <a href="#page" class="scrollToTopBtn scrollup" id="backToTop"><img src="images/back-to-top.svg"/></a>
+      </main>
+
+      <!-- End Page Content -->
+      </div>
+
+    </body>
+    </html>

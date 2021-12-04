@@ -1,0 +1,314 @@
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Realtor's Property Resource - Property Details Test</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5bd0e4dcca.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src='scripts/nav_btn_dropdown.js'></script>
+        <script src='scripts/pin_nav.js' defer></script>
+        <script src='scripts/save_snackbar.js'></script>
+        <script src='scripts/smoothScrollLocal.js'defer></script>
+        <script src='scripts/backToTop.js'></script>
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <div class="top-nav-container" id="page">
+            <div class="top-nav">
+              <div class="buffer"><img class="global-nav" src="images/global-navbar.png"/>
+              </div>
+            </div>
+            <hr/>
+            <div class="top-nav">
+              <div class="buffer"><img class="search-bar" src="images/search.png"/></div>
+            </div>
+          </div>
+          <div class="breadcrumb-cont">
+            <div class="breadcrumb buffer">
+               <p><a href="#" class="link">Home &nbsp / &nbsp Property Search &nbsp / &nbsp Search Results &nbsp /&nbsp</a><b>&nbsp 2332 Newport Blvd</b>
+               </p>
+             </div>
+          </div>
+
+
+          <!-- Start Address Bar -->
+          <div class="address-bar">
+            <div class="buffer address-card-header">
+              <div class="address-label"><img class="address-prop-type" src="images/icon-residential.svg"/><h3>1092 Castlegate Ln.</h3><p>Santa Ana, CA 92706</p>
+              </div>
+              <div class="address-tool-bar">
+                <ul class="address-tool-items toggle-save">
+                  <!-- <li><a href="#"><i class="fal fa-envelope-open-text address-icon"></i> &nbsp&nbspMailing Labels</a></li> -->
+                  <li><a href="#"><i class="fal fa-print address-icon"></i> &nbsp&nbspPrint</a></li>
+                  <li><a onclick="openSnack()"  class="save-icon"><i class="fal fa-heart address-icon icon-default"></i>&nbsp&nbspSave</a></li>
+                  <li class="address-report-btn"><a href="#"><i class="fal fa-file-chart-pie address-icon"></i> &nbsp&nbspCreate Report</a></li>
+                  <!-- Save dialog -->
+                  <div class="dialog-cont save-dialog-close" id="saveDialog">
+                    <div class="save-dialog">
+                      <div><i class="fas fa-heart address-icon icon-active"></i>&nbsp&nbspSave to</div>
+                      <div class="save-snack">
+                        <label class="l2">My Properties</label>
+                      </div>
+                      <form>
+                        <div class="form-row">
+                          <div class="form-label">
+                            <label for="propname" class>Property Name</label>
+                          </div>
+                          <div class="form-input">
+                            <input  class="form-field" type="text" id="propname" name="propertyname" placeholder="1092 Castlegate Ln, Santa Ana, CA 92706" />
+                          </div>
+                        </div>
+                      </form>
+                      <div class="btn-cont">
+                        <button type="button" class="btn-40 btn-primary btn-w-100" id="savePropBtn">Save</button>
+                        <button type="button" class="btn-40 btn-secondary btn-w-100" id="CancelSavePropBtn">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Save snackbar -->
+                  <div id="saveSnack" class="hide-snack snack">
+                    <div><i class="fas fa-heart address-icon icon-active" id="saveIcon"></i>&nbsp&nbspSaved to</div>
+                    <div class="save-snack">
+                      <label class="l2">My Properties</label>
+                    </div>
+                    <div>
+                      <a>Go to my saved properties</a>
+                    </div>
+                  </div>
+                    <!-- Remove snackbar -->
+                  <div id="removeSnack" class="hide-snack snack">
+                    <div><i class="fal fa-heart address-icon icon-default" id="unsaveIcon"></i>&nbsp&nbspRemoved from</div>
+                    <div class="save-snack">
+                      <label class="l2">My Properties</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Summary Details -->
+          <div class="sum-det-cont">
+            <div class="buffer summary-card-cont">
+              <div class="media-viewer-cont">
+                <img src="images/media-viewer-control.png" class="img-card-scale"/>
+                <div class="media-img">
+
+                </div>
+                <div class="media-img-toolbar-cont">
+                  <a href="my-updates.html#updateTabs" class="btn-40 btn-secondary"><span class="btn-text-align"><i class="fal fa-plus-circle address-icon"></i>Add Photos</span></a>
+                  <div class="media-pagination-cont">
+                    <div class="l3 gray7">46 Photos</div>
+                    <div class="img-pagination">
+                      <a href="#"><i class="far fa-chevron-left"></i></a>
+                      <a href="#" id="img-active">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#"><i class="fal fa-ellipsis-h"></i></a>
+                      <a href="#"><i class="far fa-chevron-right"></i></a>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+                <img class="sum-details" src="images/summary-details.jpg"/>
+            </div>
+          </div>
+          <!-- End Summary Details -->
+
+            <!-- Start Page Title -->
+            <div class="page-title-cont  section" id="subnav">
+                <div class="page-title buffer">
+                  <p class="sh2">Market Trends</p>
+               </div>
+            </div>
+            <!-- End Page Title -->
+        </header>
+        <!-- Start Subnav -->
+        <nav class="pinNav">
+          <div class="wrapper buffer">
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li>
+                <a href="property-info.html#subnav" class="desktop-item">Property Information</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Property Information</label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>Listing Information</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#descrip" class="scroll">Description</a></li>
+                        <li><a href="property-info.html#descrip" class="scroll">Open House</a></li>
+                        <li><a href="property-info.html#propFacts" class="scroll">Property Facts</a></li>
+                        <li><a href="property-info.html#features" class="scroll">Features</a></li>
+                        <li><a href="property-info.html#homeowners" class="scroll">Homeowners Association</a></li>
+                        <li><a href="property-info.html#listingDet" class="scroll">Listing Details</a></li>
+                        <li><a href="property-info.html#schools" class="scroll">Schools</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Property History</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#statusPriceHist" class="scroll">Status & Price Change History</a></li>
+                        <li><a href="property-info.html#priorSales" class="scroll">Prior Sales Transactions</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Mortgage Records</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Deed Records</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Tax Information</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Distressed Information</a></li>
+                        <li><a href="property-info.html#propHist" class="scroll">Listing Records</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Property Analysis</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#priceTools" class="scroll">Pricing Tools</a></li>
+                        <li><a href="property-info.html#nearbyMarket" class="scroll">Nearby Market Activity</a></li>
+                        <li><a href="property-info.html#multipleList" class="scroll">Multiple Listings</a></li>
+                        <li><a href="property-info.html#ownerFacts" class="scroll">Owner Facts</a></li>
+                        <li><a href="property-info.html#additionalRes" class="scroll">Additional Resources</a></li>
+                        <li><a href="property-info.html#legalDescrip" class="scroll">Legal Description</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="map-location.html#subnav" class="desktop-item">Map & Location</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Map & Location</label>
+                <ul class="drop-menu">
+                  <li><a href="map-location.html#fullMap" class="scroll">Map</a></li>
+                  <li><a href="map-location.html#mapShort" class="scroll">Map Shortcuts</a></li>
+                  <li><a href="map-location.html#locationDet" class="scroll">Location Details</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="market-trends.html#subnav" class="desktop-item" id="current">Market Trends</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Market Trends</label>
+                <ul class="drop-menu">
+                  <li><a href="market-trends.html#marketTrends" class="scroll">Market Trends</a></li>
+                  <li><a href="market-trends.html#activeList" class="scroll">Active Listings</a></li>
+                  <li><a href="market-trends.html#listingInvent" class="scroll">Listing Inventory</a></li>
+                  <li><a href="market-trends.html#distressedInvent" class="scroll">Distressed Property Inventory</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="pricing-stats.html#subnav" class="desktop-item">Pricing Statistics</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Pricing Statistics</label>
+                <ul class="drop-menu">
+                  <li><a href="pricing-stats.html#soldList" class="scroll">Sold Listings</a></li>
+                  <li><a href="pricing-stats.html#salesFinancing" class="scroll">Sales and Financing Activity</a></li>
+                  <li><a href="pricing-stats.html#medianSalesSqft" class="scroll">Median Sales Price by Sqft</a></li>
+                  <li><a href="pricing-stats.html#soldCompStats" class="scroll">Price Range of Homes Sold</a></li>
+                </ul>
+              </li>
+              <li><a href="#subnav">CMA</a></li>
+              <li>
+                <a href="refine-value.html#subnav" class="desktop-item">Refine Value</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Refine Value</label>
+                <ul class="drop-menu">
+                  <li><a href="refine-value.html#basicFacts" class="scroll">Basic Facts</a></li>
+                  <li><a href="refine-value.html#homeImprovements" class="scroll">Adjust Home Improvments</a></li>
+                  <li><a href="refine-value.html#neededImprovements" class="scroll">Adjust Needed Improvements</a></li>
+                  <li><a href="refine-value.html#marketHomeCond" class="scroll">Market and Home Conditions</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#subnav" class="desktop-item">Neighborhood</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Neighborhood</label>
+                <ul class="drop-menu">
+                  <li><a href="#">Summary</a></li>
+                  <li><a href="#">Housing</a></li>
+                  <li><a href="#">People</a></li>
+                  <li><a href="#">Economy</a></li>
+                  <li><a href="#">Quality of Life</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="my-updates.html#subnav" class="desktop-item">My Updates</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">My Updates</label>
+                <ul class="drop-menu">
+                  <li><a href="my-updates.html#notesContent"><label for="notesTab">Add Notes</label></a></li>
+                  <li><a href="my-updates.html#photosContent"><label for="photosTab">Add Photos</label></a></li>
+                  <li><a href="my-updates.html#sellersContent"><label for="sellersTab">Create Seller's Proceeds</label></a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="menu-btn container">
+              <div class="dropdown">
+                <button onclick="openNavDropdown()" class="dropbtn">Create Report &nbsp <i class="far fa-angle-down"></i></button>
+                <ul id="navDropdown" class="dropdown-content" >
+                  <li><a href="#"><i class="fal fa-file-chart-pie"></i> &nbspCreate Report</a></li>
+                  <li><a onclick="openSnack()" class="save-icon"><i class="fal fa-heart icon-default"></i>&nbsp&nbspSave</a></li>
+                  <li><a href="#"><i class="fal fa-print"></i> &nbspPrint</a></li>
+                  <!-- <li><a href="#"><i class="fal fa-envelope-open-text"></i> &nbspMailing Labels</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Subnav -->
+
+      <!-- Start Page Content -->
+      <main>
+        <div class="card-container-1col buffer">
+          <!-- Column 1 -->
+              <div class="Col1">
+                <div class="marketTrends card section" id="marketTrends">
+                  <img class="img-card-scale" src="images/mt-market-trends.png"/>
+                </div>
+              </div>
+
+              <div class="Col1">
+                <div class="activeListings card section" id="activeList">
+                  <img class="img-card-scale" src="images/mt-active-listings.png"/>
+                </div>
+              </div>
+              <div class="Col1">
+                <div class="listingInventory card section" id="listingInvent">
+                  <img class="img-card-scale" src="images/mt-listing-inventory.png"/>
+                </div>
+              </div>
+              <div class="Col1">
+                <div class="distressedInventory card section" id="distressedInvent">
+                  <img class="img-card-scale" src="images/mt-inventory-distressed.png"/>
+                </div>
+              </div>
+
+              <!-- Column 2 -->
+            <!-- <div class="col2">
+              <div class="nearbyMarketActivity card">
+                <img class="imgCard" src="images/nearbyMarketActivity.png"/>
+              </div>
+            </div> -->
+        </div>
+        <footer class="card-container-1col buffer">
+          <div class="footer card">
+            <img class="img-card-scale" src="images/footer.png"/>
+          </div>
+        </footer>
+        <a href="#page" class="scrollToTopBtn scrollup" id="back-to-top"><img src="images/back-to-top.svg"/></a>
+      </main>
+
+      <!-- End Page Content -->
+      </div>
+
+    </html>

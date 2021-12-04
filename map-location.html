@@ -1,0 +1,512 @@
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Realtor's Property Resource - Property Details Test</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5bd0e4dcca.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src='scripts/nav_btn_dropdown.js'></script>
+        <script src='scripts/pin_nav.js' defer></script>
+        <script src='scripts/save_snackbar.js'></script>
+        <script src='scripts/changeMap.js'></script>
+        <script src='scripts/openCssTab.js'defer></script>
+        <!-- <script src='scripts/smoothScrollPage.js'></script> -->
+
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <div class="top-nav-container">
+            <div class="top-nav">
+              <div class="buffer"><img class="global-nav" src="images/global-navbar.png"/>
+              </div>
+            </div>
+            <hr/>
+            <div class="top-nav">
+              <div class="buffer"><img class="search-bar" src="images/search.png"/></div>
+            </div>
+          </div>
+          <div class="breadcrumb-cont">
+            <div class="breadcrumb buffer">
+               <p><a href="#" class="link">Home &nbsp / &nbsp Property Search &nbsp / &nbsp Search Results &nbsp /&nbsp</a><b>&nbsp 2332 Newport Blvd</b>
+               </p>
+             </div>
+          </div>
+
+
+          <!-- Start Address Bar -->
+          <div class="address-bar">
+            <div class="buffer address-card-header">
+              <div class="address-label"><img class="address-prop-type" src="images/icon-residential.svg"/><h3>1092 Castlegate Ln.</h3><p>Santa Ana, CA 92706</p>
+              </div>
+              <div class="address-tool-bar">
+                <ul class="address-tool-items toggle-save">
+                  <!-- <li><a href="#"><i class="fal fa-envelope-open-text address-icon"></i> &nbsp&nbspMailing Labels</a></li> -->
+                  <li><a href="#"><i class="fal fa-print address-icon"></i> &nbsp&nbspPrint</a></li>
+                  <li><a onclick="openSnack()"  class="save-icon"><i class="fal fa-heart address-icon icon-default"></i>&nbsp&nbspSave</a></li>
+                  <li class="address-report-btn"><a href="#"><i class="fal fa-file-chart-pie address-icon"></i> &nbsp&nbspCreate Report</a></li>
+                  <!-- Save dialog -->
+                  <div class="dialog-cont save-dialog-close" id="saveDialog">
+                    <div class="save-dialog">
+                      <div><i class="fas fa-heart address-icon icon-active"></i>&nbsp&nbspSave to</div>
+                      <div class="save-snack">
+                        <label class="l2">My Properties</label>
+                      </div>
+                      <form>
+                        <div class="form-row">
+                          <div class="form-label">
+                            <label for="propname" class>Property Name</label>
+                          </div>
+                          <div class="form-input">
+                            <input  class="form-field" type="text" id="propname" name="propertyname" placeholder="1092 Castlegate Ln, Santa Ana, CA 92706" />
+                          </div>
+                        </div>
+                      </form>
+                      <div class="btn-cont">
+                        <button type="button" class="btn-40 btn-primary btn-w-100" id="savePropBtn">Save</button>
+                        <button type="button" class="btn-40 btn-secondary btn-w-100" id="CancelSavePropBtn">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Save snackbar -->
+                  <div id="saveSnack" class="hide-snack snack">
+                    <div><i class="fas fa-heart address-icon icon-active" id="saveIcon"></i>&nbsp&nbspSaved to</div>
+                    <div class="save-snack">
+                      <label class="l2">My Properties</label>
+                    </div>
+                    <div>
+                      <a>Go to my saved properties</a>
+                    </div>
+                  </div>
+                    <!-- Remove snackbar -->
+                  <div id="removeSnack" class="hide-snack snack">
+                    <div><i class="fal fa-heart address-icon icon-default" id="unsaveIcon"></i>&nbsp&nbspRemoved from</div>
+                    <div class="save-snack">
+                      <label class="l2">My Properties</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Summary Details -->
+          <div class="sum-det-cont">
+            <div class="buffer summary-card-cont">
+              <div class="media-viewer-cont">
+                <img src="images/media-viewer-control.png" class="img-card-scale"/>
+                <div class="media-img">
+
+                </div>
+                <div class="media-img-toolbar-cont">
+                  <a href="my-updates.html#updateTabs" class="btn-40 btn-secondary"><span class="btn-text-align"><i class="fal fa-plus-circle address-icon"></i>Add Photos</span></a>
+                  <div class="media-pagination-cont">
+                    <div class="l3 gray7">46 Photos</div>
+                    <div class="img-pagination">
+                      <a href="#"><i class="far fa-chevron-left"></i></a>
+                      <a href="#" id="img-active">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#"><i class="fal fa-ellipsis-h"></i></a>
+                      <a href="#"><i class="far fa-chevron-right"></i></a>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+                <img class="sum-details" src="images/summary-details.jpg"/>
+            </div>
+          </div>
+          <!-- End Summary Details -->
+
+            <!-- Start Page Title -->
+            <div class="page-title-cont section" id="subnav">
+                <div class="page-title buffer">
+                  <p class="sh2">Map & Location</p>
+               </div>
+            </div>
+            <!-- End Page Title -->
+        </header>
+        <!-- Start Subnav -->
+        <nav class="pinNav">
+          <div class="wrapper buffer">
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li>
+                <a href="property-info.html#subnav" class="desktop-item">Property Information</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Property Information</label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>Listing Information</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#descrip">Description</a></li>
+                        <li><a href="property-info.html#descrip">Open House</a></li>
+                        <li><a href="property-info.html#propFacts">Property Facts</a></li>
+                        <li><a href="property-info.html#features">Features</a></li>
+                        <li><a href="property-info.html#homeowners">Homeowners Association</a></li>
+                        <li><a href="property-info.html#listingDet">Listing Details</a></li>
+                        <li><a href="property-info.html#schools">Schools</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Property History</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#statusPriceHist">Status & Price Change History</a></li>
+                        <li><a href="property-info.html#priorSales">Prior Sales Transactions</a></li>
+                        <li><a href="property-info.html#propHist"><label for="mortgageTab">Mortgage Records</label></a></li>
+                        <li><a href="property-info.html#propHist"><label for="deedTab">Deed Records</label></a></li>
+                        <li><a href="property-info.html#propHist"><label for="taxTab">Tax Information</label></label></a></li>
+                        <li><a href="property-info.html#propHist"><label for="distressedTab">Distressed Information</label></label></a></li>
+                        <li><a href="property-info.html#propHist"><label for="listingTab">Listing Records</label></label></a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Property Analysis</header>
+                      <ul class="mega-links">
+                        <li><a href="property-info.html#priceTools">Pricing Tools</a></li>
+                        <li><a href="property-info.html#nearbyMarket">Nearby Market Activity</a></li>
+                        <li><a href="property-info.html#multipleList">Multiple Listings</a></li>
+                        <li><a href="property-info.html#ownerFacts">Owner Facts</a></li>
+                        <li><a href="property-info.html#additionalRes">Additional Resources</a></li>
+                        <li><a href="property-info.html#legalDescrip">Legal Description</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="map-location.html#subnav" class="desktop-item" id="current">Map & Location</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Map & Location</label>
+                <ul class="drop-menu">
+                  <li><a href="map-location.html#fullMap">Map</a></li>
+                  <li><a href="map-location.html#mapShort">Map Shortcuts</a></li>
+                  <li><a href="map-location.html#locationDet">Location Details</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="market-trends.html#subnav" class="desktop-item">Market Trends</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Market Trends</label>
+                <ul class="drop-menu">
+                  <li><a href="market-trends.html#marketTrends">Market Trends</a></li>
+                  <li><a href="market-trends.html#activeList">Active Listings</a></li>
+                  <li><a href="market-trends.html#listingInvent">Listing Inventory</a></li>
+                  <li><a href="market-trends.html#distressedInvent">Distressed Property Inventory</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="pricing-stats.html#subnav" class="desktop-item">Pricing Statistics</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Pricing Statistics</label>
+                <ul class="drop-menu">
+                  <li><a href="pricing-stats.html#soldList">Sold Listings</a></li>
+                  <li><a href="pricing-stats.html#salesFinancing">Sales and Financing Activity</a></li>
+                  <li><a href="pricing-stats.html#medianSalesSqft">Median Sales Price by Sqft</a></li>
+                  <li><a href="pricing-stats.html#soldCompStats">Price Range of Homes Sold</a></li>
+                </ul>
+              </li>
+              <li><a href="#subnav">CMA</a></li>
+              <li>
+                <a href="refine-value.html#subnav" class="desktop-item">Refine Value</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Refine Value</label>
+                <ul class="drop-menu">
+                  <li><a href="refine-value.html#basicFacts">Basic Facts</a></li>
+                  <li><a href="refine-value.html#homeImprovements">Adjust Home Improvments</a></li>
+                  <li><a href="refine-value.html#neededImprovements">Adjust Needed Improvements</a></li>
+                  <li><a href="refine-value.html#marketHomeCond">Market and Home Conditions</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#subnav" class="desktop-item">Neighborhood</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Neighborhood</label>
+                <ul class="drop-menu">
+                  <li><a href="#">Summary</a></li>
+                  <li><a href="#">Housing</a></li>
+                  <li><a href="#">People</a></li>
+                  <li><a href="#">Economy</a></li>
+                  <li><a href="#">Quality of Life</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="my-updates.html#subnav" class="desktop-item">My Updates</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">My Updates</label>
+                <ul class="drop-menu">
+                  <li><a href="my-updates.html#notesContent"><label for="notesTab">Add Notes</label></a></li>
+                  <li><a href="my-updates.html#photosContent"><label for="photosTab">Add Photos</label></a></li>
+                  <li><a href="my-updates.html#sellersContent"><label for="sellersTab">Create Seller's Proceeds</label></a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="menu-btn container">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Create Report &nbsp <i class="far fa-angle-down"></i></button>
+                <ul id="navDropdown" class="dropdown-content toggle-save">
+                  <li><a href="#"><i class="fal fa-file-chart-pie"></i> &nbspCreate Report</a></li>
+                  <li><a onclick="openSnack()" class="save-icon"><i class="fal fa-heart icon-default"></i>&nbsp&nbspSave</a></li>
+                  <li><a href="#"><i class="fal fa-print"></i> &nbspPrint</a></li>
+                  <li><a href="#"><i class="fal fa-envelope-open-text"></i> &nbspMailing Labels</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Subnav -->
+
+      <!-- Start Page Content -->
+      <main>
+        <!-- Map -->
+        <div class="card-container-map1col buffer">
+          <div class="col1">
+            <div class="section" id="fullMap">
+              <img class="img-card-scale" src="images/map-view-bar.png"/>
+            </div>
+            <div class="card section" id="Map">
+              <div id="mapViews" class="map-container">
+                <div class="market-activity-map map-show" id="marketActMap" >
+                  <img class="img-card-scale" src="images/map-market-act.png"/>
+                </div>
+                <div class="traffic-map map-hidden"  id="trafficMap">
+                  <img class="img-card-scale" src="images/map-traffic.png"/>
+                </div>
+                <div class="prospecting-map map-hidden" id="prospectingMap">
+                  <img class="img-card-scale" src="images/map-prospect.png"/>
+                </div>
+                <div class="surrounding-map map-hidden" id="surroundingMap">
+                  <img class="img-card-scale" src="images/map-surrounding.png"/>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="card-container-map2col buffer">
+          <!-- Column 1 -->
+          <div class="col2">
+            <!-- Map Shortcuts -->
+            <div class="map-shortcuts card-short section" id="mapShort">
+              <div class="card-header-line">
+                <h4>Map Shortcuts</h4><button class="card-header-expand-btn" ><i class="far fa-ellipsis-v"></i></button>
+              </div>
+              <ul id="mapViewMenu">
+                <li><a href="#fullMap" id="marketActivity" class="map-thumb-cont map-btn">
+                  <svg class="shadow-svg shadow-svg-hover" width="87px" height="77px" viewBox="0 0 87 77"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                      <title>thumb-market-activity</title>
+                      <defs>
+                          <linearGradient x1="1.70372368e-06%" y1="50.0063476%" x2="100%" y2="50.0063476%" id="linearGradient-1">
+                              <stop stop-color="#D0E7F8" offset="0%"></stop>
+                              <stop stop-color="#E9F4FC" offset="84%"></stop>
+                              <stop stop-color="#EEF7FD" offset="100%"></stop>
+                          </linearGradient>
+                          <radialGradient cx="49.0142251%" cy="28.9023968%" fx="49.0142251%" fy="28.9023968%" r="105.301412%" gradientTransform="translate(0.490142,0.289024),scale(0.552800,1.000000),translate(-0.490142,-0.289024)" id="radialGradient-2">
+                              <stop stop-color="#BEF4D1" offset="3%"></stop>
+                              <stop stop-color="#D6FFE5" offset="100%"></stop>
+                          </radialGradient>
+                          <radialGradient cx="-154.955527%" cy="-109.600515%" fx="-154.955527%" fy="-109.600515%" r="387.371134%" gradientTransform="translate(-1.549555,-1.096005),scale(0.986023,1.000000),translate(1.549555,1.096005)" id="radialGradient-3">
+                              <stop stop-color="#D0E7F8" offset="10%"></stop>
+                              <stop stop-color="#EEF7FD" offset="92%"></stop>
+                          </radialGradient>
+                      </defs>
+                      <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="thumb-market-activity" transform="translate(-0.000405, -0.000000)">
+                              <path d="M65.4504084,38.2500079 C58.4504084,43.9600079 58.0804084,43.9600079 57.4504084,43.9600079 C52.0004084,44 50.0004084,37.6400079 48.2804084,32.0700079 C47.9604084,31.0700079 47.6504084,30.0700079 47.2804084,29.0700079 C46.1404084,25.8200079 40.2804084,22.1300079 35.1404084,18.8700079 C32.1871786,17.1126993 29.3602995,15.1512596 26.6804084,13 C22.7604084,9.61000789 17.3804054,6.16 6.50040545,9.09494702e-13 L3.50040545,9.09494702e-13 C2.50040545,9.09494702e-13 -0.00126083588,2.25255841 4.76778951e-07,5 L4.76778951e-07,37.5200079 L19.3304084,37.5200079 C20.9821547,31.4487922 26.4590046,27.2085186 32.7504084,27.1300079 C40.6337105,27.2831738 46.9009784,33.7966558 46.7504084,41.6800079 C46.8953857,49.559487 40.6297321,56.0668158 32.7504084,56.2200079 C26.4590046,56.1414971 20.9821547,51.9012236 19.3304084,45.8300079 L4.76778951e-07,45.8300079 L4.76778951e-07,69 C4.76778951e-07,73.4182859 3.58213041,77 8.00040841,77 L79.0004084,77 C83.4186864,77 87.0000005,73.4182859 87.0000005,69 L87.0000005,38.2500079 L65.4504084,38.2500079 Z M76.2604084,68.7300079 L61.7804084,58.5800079 L69.8504084,46.1500079 L84.3404084,56.3000079 L76.2604084,68.7300079 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                              <path d="M87.0004054,5 L87.0004054,35.7500079 L64.5504084,35.7500079 L64.2104084,36.0300079 C62.4804084,37.4400079 61.2104084,38.5 60.2104084,39.2800079 C58.3604084,40.7300079 57.6004084,41.2800079 57.2904084,41.4600079 L57.2204084,41.4600079 C56.5560925,41.4000648 55.920335,41.1616557 55.3804084,40.7700079 C54.0339824,39.6147144 53.0279246,38.1142708 52.4704084,36.4300079 C52.4355079,36.3740164 52.4085821,36.3134335 52.3904084,36.2500079 C51.7704084,34.7300079 51.2404084,33.0200079 50.7104084,31.3300079 C50.3804084,30.3300079 50.0604084,29.2500079 49.7104084,28.3300079 C48.2804084,24.2600079 42.3204084,20.4900079 36.5504084,16.8400079 L35.2404084,16 C32.8229081,14.5438573 30.5105628,12.9198692 28.3204084,11.1400079 L27.5704084,10.5100079 L27.5204084,10.5100079 C24.8870751,8.35000789 19.7137408,4.84667193 12.0004054,0 L76.0004054,0 C79.3337388,0 81.3337388,0 82.0004054,0 C83.0004054,0 85.0004054,1.5 85.5004054,2 C86.0004054,2.5 86.9818183,4.26018789 87.0004054,5 Z" id="Path" fill="url(#radialGradient-2)"></path>
+                              <path d="M87.0004054,35.7500079 L87.0004054,38.2500079 L65.4504084,38.2500079 C58.4504084,43.9603814 58.0804084,43.9603814 57.4504084,43.9603814 C52.0004054,44 50.0004054,37.6400079 48.2804084,32.0700079 C47.9604084,31.0700079 47.6504084,30.0700079 47.2804084,29.0700079 C46.1404084,25.8200079 40.2804084,22.1300079 35.1404084,18.8700079 C32.1871786,17.1126993 29.3602995,15.1512596 26.6804084,13 C24.0670751,10.7400053 17.3404074,6.40667193 6.50040545,1.36424205e-12 C8.00040545,1.36424205e-12 9.00040545,1.36424205e-12 10.0004054,1.36424205e-12 L12.0004054,1.36424205e-12 C21.3604054,5.37 23.5704084,7.21000789 27.5204084,10.4900079 L27.5704084,10.4900079 L28.3204084,11.1200079 C30.5099315,12.906743 32.8222923,14.5374252 35.2404084,16 L36.5204084,16.8100079 C42.2904084,20.4600079 48.2504084,24.2300079 49.6804084,28.3000079 C50.0204084,29.3000079 50.3404084,30.3000079 50.6804084,31.3000079 C51.2104084,32.9900079 51.7404084,34.7000079 52.3604084,36.2200079 C52.3785821,36.2834335 52.4055079,36.3440164 52.4404084,36.4000079 C52.9979246,38.0842708 54.0039824,39.5847144 55.3504084,40.7400079 C55.890335,41.1316557 56.5260925,41.3700648 57.1904084,41.4300079 L57.2604084,41.4300079 C57.5704084,41.2400079 58.3304084,40.7000079 60.1804084,39.2500079 C61.1804084,38.4700079 62.4904084,37.4100079 64.1804084,36 L64.5204084,35.7200079 L87.0004054,35.7500079 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                              <path d="M69.8504084,46.1500079 L61.7804084,58.5800079 L76.2604084,68.7300079 L84.3404084,56.3000079 L69.8504084,46.1500079 Z M75.5804084,65.2000079 L65.1904084,57.9200079 L70.5404084,49.6800079 L80.9304084,57.0000079 L75.5804084,65.2000079 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                              <polygon id="Path" fill="url(#radialGradient-3)" fill-rule="nonzero" points="80.9304084 56.9600079 75.5804084 65.2000079 65.1904084 57.9200079 70.5404084 49.6800079"></polygon>
+                              <path d="M32.7504084,27.1300079 C26.4590046,27.2085186 20.9821547,31.4487922 19.3304084,37.5200079 L0.000408407723,37.5200079 L0.000408407723,45.8300079 L19.3304084,45.8300079 C20.9821547,51.9012236 26.4590046,56.1414971 32.7504084,56.2200079 C40.6297321,56.0668158 46.8953857,49.559487 46.7504084,41.6800079 C46.9009784,33.7966558 40.6337105,27.2831738 32.7504084,27.1300079 L32.7504084,27.1300079 Z M32.7504084,53.3100079 C28.0380953,53.2631601 23.8582216,50.2741109 22.2904084,45.8300079 C21.3006849,43.1484152 21.3006849,40.2016006 22.2904084,37.5200079 C23.8447775,33.0601336 28.0277243,30.0528908 32.7504084,30.0000079 C39.0434577,30.1845199 44.0492706,35.3392542 44.0492706,41.6350079 C44.0492706,47.9307615 39.0434577,53.0854959 32.7504084,53.2700079 L32.7504084,53.3100079 Z" id="Shape" fill="#FFFFFF"></path>
+                              <path d="M32.7504084,30.0000079 C28.0380953,30.0468557 23.8582216,33.0359049 22.2904084,37.4800079 C21.3006849,40.1616006 21.3006849,43.1084152 22.2904084,45.7900079 C23.8582216,50.2341109 28.0380953,53.2231601 32.7504084,53.2700079 C39.0434577,53.0854959 44.0492706,47.9307615 44.0492706,41.6350079 C44.0492706,35.3392542 39.0434577,30.1845199 32.7504084,30.0000079 L32.7504084,30.0000079 Z M35.4904084,46.8100079 C34.881161,47.4032649 34.0791978,47.7581159 33.2304084,47.8100079 L33.2304084,49.3300079 L32.0004084,49.3300079 L32.0004084,47.8300079 C31.0965929,47.7690474 30.2479836,47.3732674 29.6204084,46.7200079 C29.3899184,46.457077 29.2071676,46.1558766 29.0804084,45.8300079 C28.8791789,45.3210162 28.7806206,44.7772465 28.7904084,44.2300079 L30.6904084,44.2300079 C30.6649803,44.6779341 30.7728547,45.1233507 31.0004084,45.5100079 C31.0477911,45.6017376 31.1084437,45.6859773 31.1804084,45.7600079 C31.5454659,46.136361 32.057177,46.3337353 32.5804084,46.3000079 C33.0678028,46.3262097 33.5479551,46.1732724 33.9304084,45.8700079 C34.244341,45.5757038 34.4157079,45.160048 34.4004084,44.7300079 C34.415024,44.3216146 34.2634884,43.9247356 33.9804084,43.6300079 C33.5747799,43.2676569 33.092909,43.00109 32.5704084,42.8500079 C32.029762,42.6777826 31.5045741,42.4603481 31.0004084,42.2000079 L31.0004084,42.2000079 C29.8940863,41.676875 29.197398,40.553563 29.2204084,39.3300079 C29.1992777,38.6932626 29.3814053,38.0663232 29.7404084,37.5400079 C29.8217254,37.4200425 29.9119818,37.3063863 30.0104084,37.2000079 C30.5764789,36.6148282 31.3383654,36.2588065 32.1504084,36.2000079 L32.1504084,34.4800079 L33.4004084,34.4800079 L33.4004084,36.2000079 C34.2248182,36.2909461 34.9797635,36.7043685 35.5004084,37.3500079 C36.0172155,38.0745712 36.2776198,38.9507965 36.2404084,39.8400079 L34.3504084,39.8400079 C34.3788184,39.2889414 34.2241134,38.7439579 33.9104084,38.2900079 C33.6272601,37.9168386 33.1782903,37.7073194 32.7104084,37.7300079 C32.2827133,37.7022957 31.861621,37.8462589 31.5404084,38.1300079 C31.2433004,38.4443274 31.0910367,38.8684905 31.1204084,39.3000079 C31.1038426,39.705757 31.255862,40.1002837 31.5404084,40.3900079 C31.953498,40.7393893 32.4331711,41.0013385 32.9504084,41.1600079 C33.4889505,41.3498064 34.0135631,41.5770271 34.5204084,41.8400079 C34.8889298,42.026916 35.2262649,42.2697973 35.5204084,42.5600079 C35.7819562,42.8238266 35.9892036,43.1363965 36.1304084,43.4800079 C36.2779915,43.8729225 36.3492654,44.290384 36.3404084,44.7100079 C36.3621671,45.5096575 36.0549113,46.2832191 35.4904084,46.8500079 L35.4904084,46.8100079 Z" id="Shape" fill="#0070C1"></path>
+                              <path d="M36.3004084,44.7100079 C36.3327805,45.5038307 36.0402941,46.2765724 35.4904084,46.8500079 C34.881161,47.4432649 34.0791978,47.7981159 33.2304084,47.8500079 L33.2304084,49.3700079 L32.0004084,49.3700079 L32.0004084,47.8300079 C31.0965929,47.7690474 30.2479836,47.3732674 29.6204084,46.7200079 C29.3899184,46.457077 29.2071676,46.1558766 29.0804084,45.8300079 C28.8791789,45.3210162 28.7806206,44.7772465 28.7904084,44.2300079 L30.6904084,44.2300079 C30.6649803,44.6779341 30.7728547,45.1233507 31.0004084,45.5100079 C31.0477911,45.6017376 31.1084437,45.6859773 31.1804084,45.7600079 C31.5454659,46.136361 32.057177,46.3337353 32.5804084,46.3000079 C33.0678028,46.3262097 33.5479551,46.1732724 33.9304084,45.8700079 C34.244341,45.5757038 34.4157079,45.160048 34.4004084,44.7300079 C34.415024,44.3216146 34.2634884,43.9247356 33.9804084,43.6300079 C33.5747799,43.2676569 33.092909,43.00109 32.5704084,42.8500079 C32.029762,42.6777826 31.5045741,42.4603481 31.0004084,42.2000079 L31.0004084,42.2000079 C29.8940863,41.676875 29.197398,40.553563 29.2204084,39.3300079 C29.1992777,38.6932626 29.3814053,38.0663232 29.7404084,37.5400079 C29.8217254,37.4200425 29.9119818,37.3063863 30.0104084,37.2000079 C30.5764789,36.6148282 31.3383654,36.2588065 32.1504084,36.2000079 L32.1504084,34.4800079 L33.4004084,34.4800079 L33.4004084,36.2000079 C34.2248182,36.2909461 34.9797635,36.7043685 35.5004084,37.3500079 C36.0172155,38.0745712 36.2776198,38.9507965 36.2404084,39.8400079 L34.3504084,39.8400079 C34.3788184,39.2889414 34.2241134,38.7439579 33.9104084,38.2900079 C33.6272601,37.9168386 33.1782903,37.7073194 32.7104084,37.7300079 C32.2827133,37.7022957 31.861621,37.8462589 31.5404084,38.1300079 C31.2433004,38.4443274 31.0910367,38.8684905 31.1204084,39.3000079 C31.1038426,39.705757 31.255862,40.1002837 31.5404084,40.3900079 C31.953498,40.7393893 32.4331711,41.0013385 32.9504084,41.1600079 C33.4889505,41.3498064 34.0135631,41.5770271 34.5204084,41.8400079 C34.8889298,42.026916 35.2262649,42.2697973 35.5204084,42.5600079 C35.7819562,42.8238266 35.9892036,43.1363965 36.1304084,43.4800079 C36.2643949,43.8755572 36.3220826,44.2929445 36.3004084,44.7100079 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                          </g>
+                      </g>
+                  </svg>
+                  <div class="map-thumb-descrip">
+                    <label class="l5">Market Activity</label>
+                    <p>Explore nearby recent market activity on the map.
+                    </p>
+                  </div>
+                  <i class="fal fa-arrow-right"></i>
+                </a></li>
+                <li><a href="#fullMap" id="traffic" class="map-thumb-cont map-btn">
+                  <svg class="shadow-svg shadow-svg-hover" width="87px" height="77px" viewBox="0 0 87 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>Map Views/Elements/Traffic Line</title>
+                      <defs>
+                          <radialGradient cx="1.94824856%" cy="25.535591%" fx="1.94824856%" fy="25.535591%" r="132.907174%" gradientTransform="translate(0.019482,0.255356),scale(0.885057,1.000000),rotate(33.906939),translate(-0.019482,-0.255356)" id="radialGradient-1">
+                              <stop stop-color="#D0E7F8" offset="0%"></stop>
+                              <stop stop-color="#EEF7FD" offset="100%"></stop>
+                          </radialGradient>
+                      </defs>
+                      <g id="Tabs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Prop-Details---Map/Location" transform="translate(-352.000000, -1985.000000)">
+                              <g id="Map-Shortcuts" transform="translate(328.000000, 1813.000000)">
+                                  <g id="Group" transform="translate(24.000000, 172.000000)">
+                                      <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="86" height="76" rx="8"></rect>
+                                      <rect id="Rectangle" fill="url(#radialGradient-1)" x="0" y="0" width="87" height="77" rx="8"></rect>
+                                      <path d="M38.5,1 L43.5,0 C42.5,34.6666667 42,52.6666667 42,54 C42,56 40.5,76 40.5,76.5 C40.5,76.8333333 39,76.8333333 36,76.5 L38.5,1 Z" id="Path-2"></path>
+                                      <polygon id="Path-3" fill="#FFFFFF" points="0 31 0 39 87 39 87 31"></polygon>
+                                      <g transform="translate(4.000000, 7.000000)" fill="#EB661B" id="Triangle">
+                                          <polygon points="12 0 24 16 0 16"></polygon>
+                                      </g>
+                                      <g transform="translate(59.000000, 47.000000)" fill="#B39DF2" id="Map-/-Elements-/-Popover-/-Traffic-/-Pin-/-Purple-Copy">
+                                          <polygon id="Triangle" points="12 0 24 15 0 15"></polygon>
+                                      </g>
+                                      <rect id="Rectangle" fill="#FFBB2F" x="35.998641" y="0" width="6" height="77"></rect>
+                                      <rect id="Rectangle-Copy" fill="#FFBB2F" x="44.998641" y="7.10542736e-15" width="6" height="77"></rect>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                  <div class="map-thumb-descrip">
+                    <label class="l5">Traffic</label>
+                    <p>Analyze traffic counts near this property.
+                    </p>
+                  </div>
+                  <i class="fal fa-arrow-right"></i>
+                </a></li>
+                <li><a href="#fullMap" id="prospecting" class="map-thumb-cont map-btn">
+                  <svg class="shadow-svg shadow-svg-hover" width="87px" height="77px" viewBox="0 0 87 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>Map Views/Elements/Prospecting Line</title>
+                      <defs>
+                          <radialGradient cx="1.94824856%" cy="25.535591%" fx="1.94824856%" fy="25.535591%" r="132.907174%" gradientTransform="translate(0.019482,0.255356),scale(0.885057,1.000000),rotate(33.906939),translate(-0.019482,-0.255356)" id="radialGradient-1">
+                              <stop stop-color="#D0E7F8" offset="0%"></stop>
+                              <stop stop-color="#EEF7FD" offset="100%"></stop>
+                          </radialGradient>
+                      </defs>
+                      <g id="Tabs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Prop-Details---Map/Location" transform="translate(-352.000000, -2086.000000)">
+                              <g id="Map-Shortcuts" transform="translate(328.000000, 1813.000000)">
+                                  <g id="Group" transform="translate(24.000000, 273.000000)">
+                                      <rect id="Rectangle" fill="url(#radialGradient-1)" x="0" y="0" width="87" height="77" rx="8"></rect>
+                                      <rect id="Rectangle" fill-opacity="0.5" fill="#FFFFFF" x="6" y="8" width="36" height="48"></rect>
+                                      <rect id="Rectangle-Copy-3" fill-opacity="0.5" fill="#FFFFFF" x="46" y="8" width="35" height="48"></rect>
+                                      <path d="M0,62 L0,70 C10.0192966,68.6666667 19.1859632,68 27.5,68 C39.9710552,68 52.5,73.5 62,72.5 C68.3333333,71.8333333 76.6666667,69.6666667 87,66 L87,58.5 C74.3333333,62.8333333 65.6666667,65 61,65 C54,65 36,61 27.5,61 C21.8333333,61 12.6666667,61.3333333 0,62 Z" id="Path-3" fill="#FFFFFF"></path>
+                                      <g transform="translate(15.998641, 26.000000)" id="Pin-/-Off-Close-Withdr_Exp_Cancel-Copy">
+                                          <path d="M16,0 L16,16 L0,16 L0,0 L16,0 Z M14.6666667,1.33333333 L1.33333333,1.33333333 L1.33333333,14.6666667 L14.6666667,14.6666667 L14.6666667,1.33333333 Z" id="Outline" fill="#FFFFFF"></path>
+                                          <polygon id="Color" fill="#8EA5C2" points="14.6666667 1.33333333 14.6666667 14.6666667 1.33333333 14.6666667 1.33333333 1.33333333"></polygon>
+                                      </g>
+                                      <g transform="translate(55.000000, 23.000000)" fill-rule="nonzero" id="Pin/subject-property">
+                                          <g id="subject-property">
+                                              <g id="Outline">
+                                                  <path d="M15.84825,4.32846154 C15.0964528,3.02402529 14.0312263,1.93898901 12.75425,1.17692308 C11.4659426,0.397463794 9.99573163,-0.00926481198 8.5,-0.000154815982 C7.00433951,-0.00870147013 5.53427216,0.397987416 4.24575,1.17692308 C2.97000834,1.93914962 1.90619809,3.02423383 1.156,4.32846154 C0.389813485,5.63795072 -0.0101295808,7.13849126 -3.25043811e-16,8.66564103 C-0.0116825213,9.53273486 0.110236225,10.39628 0.36125,11.224359 C0.706166425,12.1833169 1.16432915,13.0953239 1.7255,13.94 L3.06425,15.9712821 L7.16125,21.9779487 L7.22075,22.0564103 C7.52913078,22.4558041 8.00350054,22.6820986 8.5,22.6666667 C9.03303993,22.6829942 9.53812017,22.4223394 9.843,21.9735897 L12.66075,17.854359 L13.44275,16.7035897 L14.892,14.5371795 L15.42325,13.7046154 C15.922072,12.9297458 16.3300562,12.0972443 16.63875,11.224359 C16.8921391,10.3968333 17.0141134,9.53289533 17,8.66564103 C17.0095483,7.13915448 16.6112178,5.63914925 15.84825,4.32846154 Z M8.07075,21.4069231 L8.0325,21.3546154 C8.04451097,21.3737809 8.05878589,21.39135 8.075,21.4069231 L8.07075,21.4069231 Z M15.4275,10.8189744 C15.2538744,11.3261805 15.0332839,11.8151652 14.76875,12.2792308 L13.96975,13.6 L8.7975,21.2282051 C8.73118658,21.3276383 8.61670408,21.3813151 8.5,21.3676923 C8.40206044,21.375681 8.30566428,21.3390042 8.2365,21.2674359 L5.46125,17.2223077 L4.641,16.0148718 L3.20875,13.8746154 L2.57125,12.8676923 C2.1635136,12.2259286 1.82843385,11.5385855 1.5725,10.8189744 C1.36385024,10.1216384 1.26345643,9.39497848 1.275,8.66564103 C1.26672186,7.37208785 1.60484198,6.10102762 2.2525,4.99102564 C2.89425791,3.87723632 3.80271038,2.94999139 4.89175,2.29717949 C7.12376497,0.972047716 9.87623503,0.972047716 12.10825,2.29717949 C13.1972896,2.94999139 14.1057421,3.87723632 14.7475,4.99102564 C15.395158,6.10102762 15.7332781,7.37208785 15.725,8.66564103 C15.7386552,9.3951119 15.6382144,10.122112 15.4275,10.8189744 L15.4275,10.8189744 Z" id="Shape" fill="#FFFFFF"></path>
+                                                  <path d="M14.7475,4.99102564 C14.1057421,3.87723632 13.1972896,2.94999139 12.10825,2.29717949 C9.87623503,0.972047716 7.12376497,0.972047716 4.89175,2.29717949 C3.80271038,2.94999139 2.89425791,3.87723632 2.2525,4.99102564 C1.60484198,6.10102762 1.26672186,7.37208785 1.275,8.66564103 C1.26345643,9.39497848 1.36385024,10.1216384 1.5725,10.8189744 C1.82843385,11.5385855 2.1635136,12.2259286 2.57125,12.8676923 L3.20875,13.8746154 L4.641,16.0148718 L5.46125,17.2223077 L8.2365,21.2674359 C8.30566428,21.3390042 8.40206044,21.375681 8.5,21.3676923 C8.61670408,21.3813151 8.73118658,21.3276383 8.7975,21.2282051 L13.96975,13.6 L14.76875,12.2792308 C15.0332839,11.8151652 15.2538744,11.3261805 15.4275,10.8189744 C15.6382144,10.122112 15.7386552,9.3951119 15.725,8.66564103 C15.7332781,7.37208785 15.395158,6.10102762 14.7475,4.99102564 Z M13.0815,9.63769231 C13.0015445,9.72020494 12.8931673,9.76717233 12.77975,9.76846154 L12.04875,9.76846154 L12.04875,12.8676923 C12.049147,12.9834238 12.0044979,13.0945328 11.9247087,13.1763679 C11.8449195,13.2582029 11.7365883,13.3039969 11.62375,13.3035924 L5.406,13.3035924 C5.29316175,13.3039969 5.1848305,13.2582029 5.10504132,13.1763679 C5.02525213,13.0945328 4.98060298,12.9834238 4.981,12.8676923 L4.981,9.76846154 L4.25,9.76846154 C4.01555995,9.76776725 3.82567694,9.57301544 3.82499748,9.3325641 C3.82460491,9.21589208 3.87065632,9.10410918 3.9525,9.02307692 L8.21525,4.70333333 C8.38235874,4.53769828 8.64739126,4.53769828 8.8145,4.70333333 L9.44775,5.34846154 C9.51412581,5.18727922 9.66815476,5.08253267 9.83875,5.0825641 L11.41975,5.0825641 C11.6541901,5.0832584 11.8440731,5.2780102 11.84475,5.51846154 L11.84475,7.77205128 L13.07725,9.02307692 C13.1573981,9.10393597 13.2028885,9.21417692 13.2036965,9.32948037 C13.2044831,9.44478383 13.1605219,9.55567545 13.0815,9.63769231 Z" id="Shape" fill="#000000"></path>
+                                              </g>
+                                              <g id="Combined-Shape" transform="translate(3.825000, 4.358974)">
+                                                  <path d="M9.25225,4.66410256 L8.01975,3.41307692 L8.01975,1.15948718 C8.01907306,0.919035846 7.82919005,0.724284037 7.59475,0.723589744 L6.01375,0.723589744 C5.84315476,0.723558314 5.68912581,0.828304864 5.62275,0.989487179 L4.9895,0.344358974 C4.82239126,0.178723924 4.55735874,0.178723924 4.39025,0.344358974 L0.1275,4.66410256 C0.0456563162,4.74513482 -0.000395088211,4.85691772 -2.52137705e-06,4.97358974 C0.000676935722,5.21404108 0.19055995,5.40879289 0.425,5.40948718 L1.156,5.40948718 L1.156,8.50871795 C1.15560298,8.62444949 1.20025213,8.73555846 1.28004132,8.81739352 C1.3598305,8.89922858 1.46816175,8.94502259 1.581,8.94461808 L7.79875,8.94461808 C7.91158825,8.94502259 8.0199195,8.89922858 8.09970868,8.81739352 C8.17949787,8.73555846 8.22414702,8.62444949 8.22375,8.50871795 L8.22375,5.40948718 L8.95475,5.40948718 C9.06816726,5.40819797 9.17654451,5.36123058 9.2565,5.27871795 C9.33552187,5.19670109 9.37948312,5.08580947 9.37869647,4.97050601 C9.3778885,4.85520256 9.33239814,4.74496161 9.25225,4.66410256 L9.25225,4.66410256 Z M7.58625,4.75564103 L7.58625,8.29076923 L1.7935,8.29076923 L1.7935,4.75564103 L0.9435,4.75564103 L4.68775,0.963333333 L5.8395,2.12717949 L6.154,1.3774359 L7.38225,1.3774359 L7.38225,3.68769231 L8.43625,4.75564103 L7.58625,4.75564103 Z" id="Shape" fill="#FFFFFF"></path>
+                                                  <path d="M7.38225,3.68769231 L7.38225,1.3774359 L6.154,1.3774359 L5.8395,2.12717949 L4.68775,0.963333333 L0.9435,4.75564103 L1.7935,4.75564103 L1.7935,8.29076923 L7.58625,8.29076923 L7.58625,4.75564103 L8.43625,4.75564103 L7.38225,3.68769231 Z M5.84376542,5.88461538 C5.8445876,5.97158129 5.81127414,6.05523552 5.75131439,6.1167327 C5.69135464,6.17822989 5.60979176,6.21239753 5.525,6.21155428 L3.825,6.21155428 C3.74042766,6.21165435 3.65928668,6.17724798 3.59948495,6.11591287 C3.53968322,6.05457776 3.50613701,5.97135625 3.50624972,5.88461538 L3.50624972,4.14102564 C3.50752312,3.96101465 3.64948929,3.81540833 3.825,3.81410227 L5.525,3.81410227 C5.60957234,3.81398668 5.69071332,3.84839304 5.75051505,3.90972815 C5.81031678,3.97106326 5.84386299,4.05428478 5.84376542,4.14102564 L5.84376542,5.88461538 Z" id="Shape" fill="#000000"></path>
+                                                  <path d="M5.525,3.81410227 L3.825,3.81410227 C3.64948929,3.81540833 3.50752312,3.96101465 3.50624972,4.14102564 L3.50624972,5.88461538 C3.50613701,5.97135625 3.53968322,6.05457776 3.59948495,6.11591287 C3.65928668,6.17724798 3.74042766,6.21165435 3.825,6.21155428 L5.525,6.21155428 C5.60979176,6.21239753 5.69135464,6.17822989 5.75131439,6.1167327 C5.81127414,6.05523552 5.8445876,5.97158129 5.84376542,5.88461538 L5.84376542,4.14102564 C5.84386299,4.05428478 5.81031678,3.97106326 5.75051505,3.90972815 C5.69071332,3.84839304 5.60957234,3.81398668 5.525,3.81410227 Z M5.20625,5.55769231 L4.14375,5.55769231 L4.14375,4.46794872 L5.20625,4.46794872 L5.20625,5.55769231 Z" id="Shape" fill="#FFFFFF"></path>
+                                                  <rect id="Rectangle" fill="#000000" x="4.14375" y="4.46794872" width="1.0625" height="1.08974359"></rect>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                  <div class="map-thumb-descrip">
+                    <label class="l5">Prospecting</label>
+                    <p>View off market properties nearby more likely to sell.
+                    </p>
+                  </div>
+                  <i class="fal fa-arrow-right"></i>
+                </a></li>
+                <li><a href="#fullMap" id="surrounding" class="map-thumb-cont map-btn">
+                  <svg class="shadow-svg shadow-svg-hover"width="87px" height="77px" viewBox="0 0 87 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>Map Views/Elements/Surrounding Geo</title>
+                      <defs>
+                          <rect id="path-1" x="0" y="0" width="87" height="77" rx="8"></rect>
+                          <radialGradient cx="1.94824856%" cy="25.535591%" fx="1.94824856%" fy="25.535591%" r="132.907174%" gradientTransform="translate(0.019482,0.255356),scale(0.885057,1.000000),rotate(33.906939),translate(-0.019482,-0.255356)" id="radialGradient-3">
+                              <stop stop-color="#D0E7F8" offset="0%"></stop>
+                              <stop stop-color="#EEF7FD" offset="100%"></stop>
+                          </radialGradient>
+                          <linearGradient x1="22.4520749%" y1="25.535591%" x2="78.6648502%" y2="100%" id="linearGradient-4">
+                              <stop stop-color="#80CAFF" offset="0%"></stop>
+                              <stop stop-color="#C7E8FF" offset="100%"></stop>
+                          </linearGradient>
+                      </defs>
+                      <g id="Tabs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Prop-Details---Map/Location" transform="translate(-352.000000, -2187.000000)">
+                              <g id="Map-Shortcuts" transform="translate(328.000000, 1813.000000)">
+                                  <g id="Rectangle-+-Path-3-+-Rectangle-+-Rectangle-Copy-+-Rectangle-Copy-2-+-Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-3-+-Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-5-+-Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-4-+-Rectangle-+-Rectangle-+-Rectangle-Mask" transform="translate(24.000000, 374.000000)">
+                                      <mask id="mask-2" fill="white">
+                                          <use xlink:href="#path-1"></use>
+                                      </mask>
+                                      <g id="Mask"></g>
+                                      <rect id="Rectangle" fill="url(#radialGradient-3)" mask="url(#mask-2)" x="0" y="0" width="87" height="77" rx="8"></rect>
+                                      <polygon id="Path-3" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(6.700244, 65.219832) rotate(56.000000) translate(-6.700244, -65.219832) " points="-9.66429719 62.2637642 -0.544883889 68.4148862 18.8708392 68.2425593 23.064786 62.0247775"></polygon>
+                                      <rect id="Rectangle" fill-opacity="0.5" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(15.772122, 24.963642) rotate(-35.000000) translate(-15.772122, -24.963642) " x="-7.22787804" y="10.9636424" width="46" height="28"></rect>
+                                      <rect id="Rectangle-Copy" fill-opacity="0.5" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(33.772122, 50.963642) rotate(-35.000000) translate(-33.772122, -50.963642) " x="10.772122" y="36.9636424" width="46" height="28"></rect>
+                                      <polygon id="Rectangle-Copy-2" fill-opacity="0.5" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(54.040410, 76.075578) rotate(-35.000000) translate(-54.040410, -76.075578) " points="32.588704 62.1834427 75.4921162 62.0755775 75.4921162 90.0755775 72.3175781 90.0018998"></polygon>
+                                      <g id="Group" mask="url(#mask-2)">
+                                          <g transform="translate(26.998641, 42.000000)" id="Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-3">
+                                              <path d="M8,1.33333333 C11.6818983,1.33333333 14.6666667,4.31810167 14.6666667,8 C14.6666667,11.6818983 11.6818983,14.6666667 8,14.6666667 C4.31810167,14.6666667 1.33333333,11.6818983 1.33333333,8 C1.33333333,4.31810167 4.31810167,1.33333333 8,1.33333333 Z" id="Color" fill="#DE4329"></path>
+                                              <path d="M16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 -2.36847579e-15,12.418278 -2.36847579e-15,8 C-2.36847579e-15,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 Z M14.6666667,8 C14.6666667,4.31810167 11.6818983,1.33333333 8,1.33333333 C4.31810167,1.33333333 1.33333333,4.31810167 1.33333333,8 C1.33333333,11.6818983 4.31810167,14.6666667 8,14.6666667 C11.6818983,14.6666667 14.6666667,11.6818983 14.6666667,8 Z" id="Outline" fill="#FFFFFF"></path>
+                                          </g>
+                                      </g>
+                                      <g id="Group" mask="url(#mask-2)">
+                                          <g transform="translate(46.998641, 68.000000)" id="Pin-/-Off-Close-Withdr_Exp_Cancel-Copy">
+                                              <path d="M16,0 L16,16 L0,16 L0,0 L16,0 Z M14.6666667,1.33333333 L1.33333333,1.33333333 L1.33333333,14.6666667 L14.6666667,14.6666667 L14.6666667,1.33333333 Z" id="Outline" fill="#FFFFFF"></path>
+                                              <polygon id="Color" fill="#8EA5C2" points="14.6666667 1.33333333 14.6666667 14.6666667 1.33333333 14.6666667 1.33333333 1.33333333"></polygon>
+                                          </g>
+                                      </g>
+                                      <g id="Group" mask="url(#mask-2)">
+                                          <g transform="translate(7.998641, 16.000000)" id="Pin-/-Off-Close-Withdr_Exp_Cancel-Copy-4">
+                                              <path d="M8,1.33333333 C11.6818983,1.33333333 14.6666667,4.31810167 14.6666667,8 C14.6666667,11.6818983 11.6818983,14.6666667 8,14.6666667 C4.31810167,14.6666667 1.33333333,11.6818983 1.33333333,8 C1.33333333,4.31810167 4.31810167,1.33333333 8,1.33333333 Z" id="Color" fill="#FFBB2F"></path>
+                                              <path d="M16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 Z M14.6666667,8 C14.6666667,4.31810167 11.6818983,1.33333333 8,1.33333333 C4.31810167,1.33333333 1.33333333,4.31810167 1.33333333,8 C1.33333333,11.6818983 4.31810167,14.6666667 8,14.6666667 C11.6818983,14.6666667 14.6666667,11.6818983 14.6666667,8 Z" id="Outline" fill="#FFFFFF"></path>
+                                          </g>
+                                      </g>
+                                      <path d="M39,0.105526179 C44.9333659,16.1946214 48.9333659,25.3612881 51,27.6055262 C55.9000488,32.9266792 62.8061398,36.3389684 67,42.1055262 C71,47.6055262 73.3550049,53.0806607 77.5,56.6055262 C80.0700033,58.7910332 83.2366699,61.0891911 87,63.5 L47,63.5 C42.581722,63.5 39,59.918278 39,55.5 L39,0.105526179 L39,0.105526179 Z" id="Rectangle" fill="url(#linearGradient-4)" mask="url(#mask-2)" transform="translate(63.000000, 31.802763) scale(-1, -1) translate(-63.000000, -31.802763) "></path>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                  <div class="map-thumb-descrip">
+                    <label class="l5">Surrounding Properties</label>
+                    <p>View the status of all the nearby properties.
+                    </p>
+                  </div>
+                  <i class="fal fa-arrow-right"></i>
+                </a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Column 2 -->
+              <div class="Col1">
+                <div class="location-details card section" id="locationDet">
+                  <img class="img-card-scale" src="images/location-details.png"/>
+                </div>
+              </div>
+        </div>
+        <footer class="card-container-1col buffer">
+          <div class="footer card">
+            <img class="img-card-scale" src="images/footer.png"/>
+          </div>
+        </footer>
+      </main>
+
+      <!-- End Page Content -->
+      </div>
+
+    </body>
+    </html>
